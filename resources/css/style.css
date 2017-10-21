@@ -51,6 +51,35 @@ body
     cursor: pointer;
 }
 
+#btn_create
+{
+    background-color: black;
+    color: white;
+    border: 3px solid #CFB53B;
+    border-radius: 8px;
+}
+
+#btn_create:hover
+{
+    background-color: maroon;
+    cursor: pointer;
+}
+
+#btn_info
+{
+    background-color: white;
+    color: black;
+    border: 1px solid #CFB53B;
+    border-radius: 5px;
+}
+
+#btn_info:hover
+{
+    background-color: #CFB53B;
+    color: black;
+    cursor: pointer;
+}
+
 @media screen and (max-width:5500px)
 {
     #short_oces_header
