@@ -54,7 +54,7 @@ require 'partials/header.php';
     <tr>
         <th scope="row">1</th>
         <td>ss</td>
-        <td>ss</td>
+        <td>fshs</td>
         <td>@asfgasga</td>
         <td>asg</td>
         <td>@asgas</td>
@@ -65,7 +65,7 @@ require 'partials/header.php';
     </tr>
     <tr>
         <th scope="row">2</th>
-        <td>hfd</td>
+        <td>ss</td>
         <td>fshs</td>
         <td>@asgasga</td>
         <td>sdgsdhsd</td>
