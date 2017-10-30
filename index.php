@@ -29,6 +29,7 @@
                 <br>
                 <button type="submit" class="btn" id="btn_login">LOGIN</button>
         </div>
+    <a href="test.php?id=1">HI THERE!</a>
     </body>
 
     <?php

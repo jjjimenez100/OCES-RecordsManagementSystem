@@ -1,0 +1,12 @@
+{
+  "require" : {
+    "illuminate/database" : "5.5.17",
+      "phpoffice/phpspreadsheet" : "1.0.0-beta"
+  },
+
+  "autoload" : {
+    "classmap" : [
+      "models"
+    ]
+  }
+}
