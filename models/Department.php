@@ -7,4 +7,5 @@ class Department extends EloquentModel{
     public $incrementing = false;
     protected $keyType = 'string';
     public $timestamps = false;
+
 }

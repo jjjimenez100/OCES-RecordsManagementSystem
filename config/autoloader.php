@@ -1,10 +1,12 @@
 <?php
+require dirname(__FILE__).'/../vendor/autoload.php';
+require dirname(__FILE__).'/database.php';
 
-require 'vendor/autoload.php';
-require 'config/database.php';
-
-//put all of your model classes in here
-require 'models/Department.php';
-require 'models/Report.php';
-require 'models/User.php';
-require 'models/Volunteer.php';
+/*
+    //gagamitin lang to pag walang composer na available sa pc
+    //model classes
+    require 'models/Department.php';
+    require 'models/Report.php';
+    require 'models/User.php';
+    require 'models/Volunteer.php';
+*/

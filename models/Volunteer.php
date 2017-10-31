@@ -6,4 +6,8 @@ class Volunteer extends EloquentModel{
     protected $primaryKey = 'Activity_Code';
     public $incrementing = false;
     public $timestamps = false;
+
+    public function report(){
+        return $this->hasOne('Report', 'Activity_Code', 'Activity_Code');
+    }
 }

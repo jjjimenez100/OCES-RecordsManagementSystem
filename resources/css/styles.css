@@ -1,0 +1,354 @@
+body
+{
+  background-image: url(../images/oces2.png);
+  background-size: 35vw;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-attachment: fixed;
+}
+
+#heading1
+{
+	background-color: black; 
+	color: white; 
+	padding: 10px;
+}
+
+#heading2
+{
+	background-color: maroon; 
+	padding: 5px;
+}
+
+#heading3
+{
+	background-color: #CFB53B; 
+	padding: 3px;
+}
+
+#hau_logo
+{
+	height: 70px;
+	float:left;
+}
+
+
+#btn_login
+{
+	background-color: black; 
+	color: white; 
+	border: 3px solid #CFB53B; 
+	border-radius: 8px;
+}
+
+#btn_login:hover
+{
+	background-color: maroon; 
+	cursor: pointer;
+}
+
+#btn_create
+{
+  background-color: black; 
+  color: white; 
+  border: 3px solid #CFB53B; 
+  border-radius: 8px;
+}
+
+#btn_create:hover
+{
+  background-color: maroon; 
+  cursor: pointer;
+}
+
+#btn_info
+{
+  background-color: white; 
+  color: black; 
+  border: 1px solid #CFB53B; 
+  border-radius: 5px;
+}
+
+#btn_info:hover
+{
+  background-color: #CFB53B;
+  color: black; 
+  cursor: pointer;
+}
+
+.btn_info
+{
+  background-color: white; 
+  color: black; 
+  border: 1px solid #CFB53B; 
+  border-radius: 5px;
+}
+
+.btn_info:hover
+{
+  background-color: #CFB53B;
+  color: black; 
+  cursor: pointer;
+}
+
+#full_header
+{      
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+#rms
+{
+  color: maroon;
+}
+
+#welcome_home
+{
+  position: fixed; 
+  display: table;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  color: black;     
+}
+
+#content_home
+{
+  display: table-cell;
+  vertical-align: middle;      
+}
+
+@media screen and (max-width:5500px) 
+{
+	#short_oces_header
+	{
+		display: none;
+	}
+}
+
+@media screen and (max-width:841px) 
+{
+	#full_oces_header
+	{
+		display: none;
+	}
+	#short_oces_header
+	{
+		display: inline-block;
+	}
+}
+
+.navbar 
+{
+  background-color: #000000;
+}
+
+.navbar .navbar-brand 
+{
+  color: #ecf0f1;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus 
+{
+  color: #800000;
+  background-color: #CFB53B;
+}
+
+.navbar .navbar-text 
+{
+  color: #ecf0f1;
+}
+
+.navbar .navbar-nav .nav-link 
+{
+  color: #ecf0f1;
+  border-radius: .25rem;
+  margin: 0 0.25em;
+}
+
+.navbar .navbar-nav .nav-link:not(.disabled):hover,
+.navbar .navbar-nav .nav-link:not(.disabled):focus 
+{
+  color: #800000;
+  background-color: #CFB53B;
+}
+
+.navbar .navbar-nav .dropdown-menu 
+{
+  background-color: #000000;
+  border-color: #cfb53b;
+}
+
+.navbar .navbar-nav .dropdown-menu .dropdown-item 
+{
+  color: #ecf0f1;
+}
+
+.navbar .navbar-nav .dropdown-menu .dropdown-item:hover,
+.navbar .navbar-nav .dropdown-menu .dropdown-item:focus,
+.navbar .navbar-nav .dropdown-menu .dropdown-item.active 
+{
+  color: #800000;
+  background-color: #cfb53b;
+}
+
+.navbar .navbar-nav .dropdown-menu .dropdown-divider 
+{
+  border-top-color: #cfb53b;
+}
+
+.navbar .navbar-nav .nav-item.active .nav-link,
+.navbar .navbar-nav .nav-item.active .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link:focus,
+.navbar .navbar-nav .nav-item.show .nav-link,
+.navbar .navbar-nav .nav-item.show .nav-link:hover,
+.navbar .navbar-nav .nav-item.show .nav-link:focus 
+{
+  color: #800000;
+  background-color: #cfb53b;
+}
+
+.navbar .navbar-toggle 
+{
+  border-color: #cfb53b;
+}
+
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus 
+{
+  background-color: #cfb53b;
+}
+
+.navbar .navbar-toggle .navbar-toggler-icon 
+{
+  color: #ecf0f1;
+}
+
+.navbar .navbar-collapse,
+.navbar .navbar-form 
+{
+  border-color: #ecf0f1;
+}
+
+.navbar .navbar-link 
+{
+  color: #ecf0f1;
+}
+
+.navbar .navbar-link:hover 
+{
+  color: #800000;  
+  background-color: #CFB53B;
+}
+
+@media (max-width: 575px) 
+{
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item
+  {
+    color: #ecf0f1;
+  }
+
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus 
+  {
+    color: #800000;
+    background-color: #CFB53B;
+  }
+
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active 
+  {
+    color: #800000;
+    background-color: #cfb53b;
+  }
+}
+
+@media (max-width: 767px) 
+{
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item 
+  {
+    color: #ecf0f1;
+  }
+
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus 
+  {
+    color: #800000;
+    background-color: #CFB53B;
+  }
+
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active 
+  {
+    color: #800000;
+    background-color: #cfb53b;
+  }
+}
+
+@media (max-width: 991px) 
+{
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item 
+  {
+    color: #ecf0f1;
+  }
+
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus 
+  {
+    color: #800000;
+    background-color: #CFB53B;
+  }
+
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active 
+  {
+    color: #800000;
+    background-color: #cfb53b;
+  }
+}
+
+@media (max-width: 1199px) 
+{
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item 
+  {
+    color: #ecf0f1;
+  }
+
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus 
+  {
+    color: #800000;
+    background-color: #CFB53B;
+  }
+
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active 
+  {
+    color: #800000;
+    background-color: #cfb53b;
+  }
+}
+
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item 
+{
+  color: #ecf0f1;
+}
+
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus 
+{
+  color: #800000;
+  background-color: #CFB53B;
+}
+
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active 
+{
+  color: #800000;
+  background-color: #cfb53b;
+}
+
+#username_nav:hover
+{
+  color: white;
+  background-color: black;
+}
+

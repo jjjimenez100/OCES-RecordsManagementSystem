@@ -57,7 +57,7 @@ CREATE TABLE `tblreports` (
   `Time_Implemented` varchar(50) NOT NULL,
   `Brief_Narrative` text NOT NULL,
   `Actual_Participation` varchar(200) DEFAULT NULL,
-  `File_Activity` longblob,
+  `File_Activity` varchar(150),
   `School_Year` varchar(10) DEFAULT NULL,
   `Semester` varchar(10) DEFAULT NULL,
   `Remarks` tinyint(4) DEFAULT NULL
@@ -154,20 +154,20 @@ ALTER TABLE `tblvolunteers`
 -- Constraints for table `tblreports`
 --
 ALTER TABLE `tblreports`
-  ADD CONSTRAINT `tblreports_ibfk_1` FOREIGN KEY (`UserID`) REFERENCES `tbluser` (`UserID`);
+  ADD CONSTRAINT `tblreports_ibfk_1` FOREIGN KEY (`UserID`) REFERENCES `tbluser` (`UserID`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `tbluser`
 --
 ALTER TABLE `tbluser`
-  ADD CONSTRAINT `tbluser_ibfk_1` FOREIGN KEY (`Department`) REFERENCES `tbldepartment` (`Department`);
+  ADD CONSTRAINT `tbluser_ibfk_1` FOREIGN KEY (`Department`) REFERENCES `tbldepartment` (`Department`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `tblvolunteers`
 --
 ALTER TABLE `tblvolunteers`
-  ADD CONSTRAINT `tblvolunteers_ibfk_1` FOREIGN KEY (`Activity_Code`) REFERENCES `tblreports` (`Activity_Code`),
-  ADD CONSTRAINT `tblvolunteers_ibfk_2` FOREIGN KEY (`UserID`) REFERENCES `tbluser` (`UserID`);
+  ADD CONSTRAINT `tblvolunteers_ibfk_1` FOREIGN KEY (`Activity_Code`) REFERENCES `tblreports` (`Activity_Code`) ON DELETE CASCADE,
+  ADD CONSTRAINT `tblvolunteers_ibfk_2` FOREIGN KEY (`UserID`) REFERENCES `tbluser` (`UserID`) ON DELETE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

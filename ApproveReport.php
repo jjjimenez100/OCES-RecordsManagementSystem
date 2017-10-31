@@ -4,18 +4,23 @@
     <title>Approve Reports</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <?php
-    require 'partials/stylesheets.php';
-    ?>
+    <link rel="stylesheet" href="resources/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.16/datatables.min.css"/>
+    <link type="text/css" rel="stylesheet" href="resources/css/styles.css">
+    <link rel="shortcut icon" href="resources/images/oces.ico">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
+
+<!-- NAVIGATION LINK -->
 <?php
-require 'partials/header.php';
+    require 'partials/navs/NAV_OCESAdministrator.php';
 ?>
+<!-- END NAVIGATION LINK -->
+
 <br>
-<h1 class="text-center"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Approval of Reports</h1>
+<h1 class="text-center" style="padding-top: 50px"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Approval of Reports</h1>
 <hr>
 <p class="lead text-center"><i class="fa fa-search" aria-hidden="true"></i> Filter data within a certain date range:</p>
 <div class="row">
@@ -42,18 +47,7 @@ require 'partials/header.php';
         <th class="text-center">Actions</th>
     </tr>
     </thead>
-    <tfoot>
-    <tr>
-        <th>#</th>
-        <th>Report Name</th>
-        <th>Participation</th>
-        <th>Venue</th>
-        <th>Date</th>
-        <th>Objectives</th>
-        <th>Beneficiaries</th>
-        <th>Proponents</th>
-    </tr>
-    </tfoot>
+
     <tbody>
     <tr>
         <th scope="row">1</th>
@@ -103,35 +97,12 @@ require 'partials/header.php';
 </body>
 
 <?php
-require ('partials/scripts.php');
+require 'partials/scripts.php';
 ?>
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.16/datatables.min.js"></script>
 <script>
     $(document).ready(function() {
-        $('#tblReports').DataTable( {
-            initComplete: function () {
-                //this.api().columns([0, 2, 3, 4, 5, 6, 7]).every( function () {
-                this.api().columns().every( function () {
-                    var column = this;
-                    var select = $('<select><option value=""></option></select>')
-                        .appendTo( $(column.footer()).empty() )
-                        .on( 'change', function () {
-                            var val = $.fn.dataTable.util.escapeRegex(
-                                $(this).val()
-                            );
-
-                            column
-                                .search( val ? '^'+val+'$' : '', true, false )
-                                .draw();
-                        } );
-
-                    column.data().unique().sort().each( function ( d, j ) {
-                        select.append( '<option value="'+d+'">'+d+'</option>' )
-                    } );
-                } );
-            }
-        }
-        );
+        $('#tblReports').DataTable();
     });
 </script>
 </html>
