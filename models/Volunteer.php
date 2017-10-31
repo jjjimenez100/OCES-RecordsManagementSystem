@@ -10,4 +10,8 @@ class Volunteer extends EloquentModel{
     public function report(){
         return $this->hasOne('Report', 'Activity_Code', 'Activity_Code');
     }
+
+    public function creator(){
+        return $this->hasOne('User', 'UserID', 'UserID');
+    }
 }

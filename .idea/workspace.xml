@@ -2,56 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="562af073-ce0e-40b8-9ff1-5fa91737b76c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/oces - original copy.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/oces.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CreateReport.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CreateReport_OCESAdministrator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CreateReport_OCESStaff_CSCBRep.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HP_Faculty_NTP.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HP_OCESAdministrator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HP_OCESStaff_CSCBRep.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HP_SystemAdministrator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HP_UniversityAdministrator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UpdateProfile.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UpdateUserAccount.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ViewReport.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ViewReportByDate.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ViewReportByDepartment.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ViewReportByInvolvement.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ViewReportByParticipant.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ViewReport_Faculty_NTP.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ViewReport_OCESAdministrator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ViewReport_UniversityAdministrator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/factory/PopulateDB.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/navs/NAV_Faculty_NTP.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/navs/NAV_OCESAdministrator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/navs/NAV_OCESStaff_CSCBRep.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/navs/NAV_SystemAdministrator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/navs/NAV_UniversityAdministrator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/prototypes/test.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/styles2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/js/date_script.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/js/participation_script.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/js/viewreport_script.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp/js/ie10-viewport-bug-workaround.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp/script/scripts.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/DBHelper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/css/style.css" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/prototypes/SampleDBManip.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CreateUserAccount.php" afterPath="$PROJECT_DIR$/CreateUserAccount.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/autoloader.php" afterPath="$PROJECT_DIR$/config/autoloader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Department.php" afterPath="$PROJECT_DIR$/models/Department.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Volunteer.php" afterPath="$PROJECT_DIR$/models/Volunteer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ApproveReports.php" afterPath="$PROJECT_DIR$/ApproveReport.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/config/dboces .sql" afterPath="$PROJECT_DIR$/database/dboces .sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/prototypes/test.php" afterPath="$PROJECT_DIR$/prototypes/GenerateData.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -82,20 +36,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Department.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/Department.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PopulateDB.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/factory/PopulateDB.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1100">
+            <state relative-caret-position="740">
               <caret line="94" column="5" lean-forward="false" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
               <folding />
             </state>
@@ -105,18 +49,18 @@
       <file leaf-file-name="Volunteer.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/Volunteer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="280">
+              <caret line="14" column="57" lean-forward="false" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/prototypes/test.php">
+      <file leaf-file-name="GenerateData.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/prototypes/GenerateData.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="280">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <element signature="e#6#90#0#PHP" expanded="true" />
               </folding>
@@ -127,19 +71,21 @@
       <file leaf-file-name="dboces .sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/dboces .sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
+            <state relative-caret-position="820">
               <caret line="59" column="29" lean-forward="false" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ViewReportByInvolvement.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ViewReportByInvolvement.php">
+      <file leaf-file-name="SampleDBManip.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/prototypes/SampleDBManip.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
-              <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
-              <folding />
+            <state relative-caret-position="437">
+              <caret line="107" column="9" lean-forward="false" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
+              <folding>
+                <element signature="e#6#90#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -165,7 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/css/style.css" />
         <option value="$PROJECT_DIR$/ApproveReports.php" />
         <option value="$PROJECT_DIR$/ViewReports.php" />
         <option value="$PROJECT_DIR$/composer.json" />
@@ -212,10 +157,11 @@
         <option value="$PROJECT_DIR$/config/autoloader.php" />
         <option value="$PROJECT_DIR$/prototypes/test2.php" />
         <option value="$PROJECT_DIR$/models/Department.php" />
-        <option value="$PROJECT_DIR$/models/Volunteer.php" />
         <option value="$PROJECT_DIR$/database/factory/PopulateDB.php" />
         <option value="$PROJECT_DIR$/prototypes/test.php" />
         <option value="$PROJECT_DIR$/database/dboces .sql" />
+        <option value="$PROJECT_DIR$/models/Volunteer.php" />
+        <option value="$PROJECT_DIR$/prototypes/SampleDBManip.php" />
       </list>
     </option>
   </component>
@@ -280,6 +226,48 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="prototypes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OCES" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OCES" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OCES" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OCES" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OCES" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OCES" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="config" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -331,7 +319,7 @@
     <configuration default="false" name="Test.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/OCES/Test.php">
       <method />
     </configuration>
-    <configuration default="false" name="test.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/OCES/prototypes/test.php">
+    <configuration default="false" name="GenerateData.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/OCES/prototypes/GenerateData.php">
       <method />
     </configuration>
     <configuration default="false" name="test2.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/OCES/prototypes/test2.php">
@@ -417,14 +405,14 @@
       <item index="0" class="java.lang.String" itemvalue="PHP Built-in Web Server.Unnamed" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.PopulateDB.php" />
       <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.Test.php" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.test.php" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.GenerateData.php" />
       <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.test2.php" />
       <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.ViewReportByInvolvement.php" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.ViewReportByInvolvement.php" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.test.php" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.GenerateData.php" />
         <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.test2.php" />
         <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.PopulateDB.php" />
         <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.Test.php" />
@@ -456,12 +444,12 @@
       <workItem from="1508885098942" duration="442000" />
       <workItem from="1508964316864" duration="1580000" />
       <workItem from="1509333175331" duration="6048000" />
-      <workItem from="1509384994216" duration="29295000" />
+      <workItem from="1509384994216" duration="31069000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72912000" />
+    <option name="totallyTimeSpent" value="74686000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -499,13 +487,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/partials/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -859,44 +840,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Volunteer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/Department.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/factory/PopulateDB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="94" column="5" lean-forward="false" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prototypes/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#90#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/dboces .sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="59" column="29" lean-forward="false" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -906,6 +853,50 @@
         <state relative-caret-position="880">
           <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/dboces .sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="820">
+          <caret line="59" column="29" lean-forward="false" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/factory/PopulateDB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="94" column="5" lean-forward="false" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Volunteer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="57" lean-forward="false" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prototypes/GenerateData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#90#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prototypes/SampleDBManip.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="107" column="9" lean-forward="false" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
+          <folding>
+            <element signature="e#6#90#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
