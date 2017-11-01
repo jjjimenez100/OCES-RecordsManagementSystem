@@ -111,15 +111,6 @@ require 'partials/navs/NAV_OCESAdministrator.php';
             table.draw();
             disable();
         });
-        fromSchoolYear.addEventListener('change', function(event){
-           table.draw();
-        });
-        toSchoolYear.addEventListener('change', function(event){
-            table.draw();
-        });
-        semesterFilter.addEventListener('change', function(event){
-            table.draw();
-        });
         populateComboBox(fromSchoolYear, new Date().getFullYear(), 1950, "From School Year");
         populateComboBox(toSchoolYear, new Date().getFullYear(), 1950, "To School Year");
         populateComboBox(semesterFilter, SEMESTERS_PER_YR, 1, "Semester");
@@ -138,7 +129,7 @@ require 'partials/navs/NAV_OCESAdministrator.php';
             let exactDateFilter = new Date(exactDate.value).getTime();
             let minSY = fromSchoolYear.value;
             let maxSY = toSchoolYear.value;
-            let sem = semesterFilter.value;
+
             // /9
             if (typeof aData._date == 'undefined') {
                 aData._date = new Date(aData[2]).getTime();
@@ -158,24 +149,6 @@ require 'partials/navs/NAV_OCESAdministrator.php';
 
             if (exactDateFilter && !isNaN(exactDateFilter)) {
                 if (aData._date != exactDateFilter) {
-                    return false;
-                }
-            }
-
-            if(minSY && !isNaN(minSY)){
-                if(aData[9] < minSY){
-                    return false;
-                }
-            }
-
-            if(maxSY && !isNaN(maxSY)){
-                if(aData[9] > maxSY){
-                    return false;
-                }
-            }
-
-            if(sem && !isNaN(sem)){
-                if(aData[10] != sem){
                     return false;
                 }
             }

@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.16/datatables.min.css"/>
 </head>
 <body>
+
 <?php
 require 'partials/navs/NAV_OCESAdministrator.php';
 ?>
@@ -25,6 +26,7 @@ require 'partials/navs/NAV_OCESAdministrator.php';
             <div class="col-sm-4" id="selectDate">
                 <select class="selectpicker" id="btn_info" style="height: 37.5px; padding-bottom: 5px">
                     <option  selected disabled>Select Department</option>
+                    <option value="">All</option>
                     <option>Basic Education</option>
                     <option>CCJEF</option>
                     <option>CICT</option>
@@ -55,12 +57,21 @@ require 'partials/navs/NAV_OCESAdministrator.php';
 <?php
     require 'partials/scripts.php';
 ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.16/datatables.min.js"></script>
 <script>
     $(document).ready(function() {
+        $(function () {
+            let popovers = $('[data-toggle="popover"]');
+            popovers.popover();
+            popovers.on('click', function(event){
+               $('[data-toggle="popover"]').not(this).popover('hide');
+            });
+        });
+
        $('#tblReports').DataTable({
            initComplete: function () {
-               let column = this.api().column(7);
+               let column = this.api().column(6);
                $('#btn_info').on('change', function (){
                    let val = $.fn.dataTable.util.escapeRegex(
                        $(this).val()

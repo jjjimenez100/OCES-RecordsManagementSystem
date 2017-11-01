@@ -57,7 +57,26 @@ require 'partials/navs/NAV_OCESAdministrator.php';
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.16/datatables.min.js"></script>
 <script>
     $(document).ready(function() {
-        $('#tblReports').DataTable();
+        $(function () {
+            let popovers = $('[data-toggle="popover"]');
+            popovers.popover();
+            popovers.on('click', function(event){
+                popovers.not(this).popover('hide');
+            });
+        });
+
+        $('#tblReports').DataTable({
+            initComplete: function () {
+                let column = this.api().column(7);
+                $('#participation').on('change', function (){
+                    let val = $.fn.dataTable.util.escapeRegex(
+                        $(this).val()
+                    );
+
+                    column.search( val ? '^'+val+'$' : '', true, false ).draw();
+                });
+            }
+        });
     });
 </script>
 </html>

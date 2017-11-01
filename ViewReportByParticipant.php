@@ -22,8 +22,7 @@ require 'partials/navs/NAV_OCESAdministrator.php';
     <div class="form-group row">
         <label class="lead col-sm-2 col-form-label">Employee ID</label>
         <div class="col-sm-10 form-group row">
-            <div class="col-sm-3"><input type="text" class="form-control" placeholder="employee id"></div>
-              <div class="col-sm-3"><button type="submit" class="btn" id="btn_create">SEARCH</button></div>         
+            <div class="col-sm-3"><input type="text" class="form-control" placeholder="employee id" id="inputID"></div>
         </div>
     </div>    
     <hr style="border: 1px solid #CFB53B"><br>
@@ -42,7 +41,26 @@ require 'partials/navs/NAV_OCESAdministrator.php';
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.16/datatables.min.js"></script>
 <script>
     $(document).ready(function() {
-        $('#tblReports').DataTable();
+        $(function () {
+            let popovers = $('[data-toggle="popover"]');
+            popovers.popover();
+            popovers.on('click', function(event){
+                popovers.not(this).popover('hide');
+            });
+        });
+
+        $('#tblReports').DataTable({
+            initComplete: function () {
+                let column = this.api().column(8);
+                $('#inputID').on('input', function (){
+                    let val = $.fn.dataTable.util.escapeRegex(
+                        $(this).val()
+                    );
+
+                    column.search( val ? val: '', true, false ).draw();
+                });
+            }
+        });
     });
 </script>
 </html>

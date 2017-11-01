@@ -55,7 +55,7 @@ class PopulateDB{
         for($counter=1; $counter<=$count; $counter++){
             $newReport = new Report();
             $newReport->UserID = $this->userIDs[rand(0, count($this->userIDs)-1)];
-            $newReport->Activity_Title = file_get_contents($this->randomSentenceApiUrl);
+            $newReport->Activity_Title = $this->getRandomString(15, 20);
             $newReport->Proponents = file_get_contents($this->randomTextApiUrl);
             $newReport->Beneficiaries = file_get_contents($this->randomTextApiUrl);
             $newReport->Accomplished_Objectives = file_get_contents($this->randomTextApiUrl);
