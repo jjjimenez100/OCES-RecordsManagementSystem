@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="562af073-ce0e-40b8-9ff1-5fa91737b76c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/prototypes/test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewReportByDate.php" afterPath="$PROJECT_DIR$/ViewReportByDate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewReportByDepartment.php" afterPath="$PROJECT_DIR$/ViewReportByDepartment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewReportByInvolvement.php" afterPath="$PROJECT_DIR$/ViewReportByInvolvement.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewReportByParticipant.php" afterPath="$PROJECT_DIR$/ViewReportByParticipant.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/factory/PopulateDB.php" afterPath="$PROJECT_DIR$/database/factory/PopulateDB.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Report.php" afterPath="$PROJECT_DIR$/models/Report.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/scripts.php" afterPath="$PROJECT_DIR$/partials/scripts.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prototypes/GenerateData.php" afterPath="$PROJECT_DIR$/prototypes/GenerateData.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/viewreport_script.php" afterPath="$PROJECT_DIR$/resources/js/viewreport_script.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,8 +37,8 @@
       <file leaf-file-name="ViewReportByDate.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ViewReportByDate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="145" column="0" lean-forward="true" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+            <state relative-caret-position="414">
+              <caret line="144" column="13" lean-forward="false" selection-start-line="144" selection-start-column="13" selection-end-line="144" selection-end-column="13" />
               <folding>
                 <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#select#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -497,12 +488,12 @@
       <workItem from="1509333175331" duration="6048000" />
       <workItem from="1509384994216" duration="34947000" />
       <workItem from="1509547043703" duration="918000" />
-      <workItem from="1509548193474" duration="20440000" />
+      <workItem from="1509548193474" duration="20610000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99922000" />
+    <option name="totallyTimeSpent" value="100092000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -916,8 +907,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ViewReportByDate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="145" column="0" lean-forward="true" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+        <state relative-caret-position="414">
+          <caret line="144" column="13" lean-forward="false" selection-start-line="144" selection-start-column="13" selection-end-line="144" selection-end-column="13" />
           <folding>
             <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#select#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />

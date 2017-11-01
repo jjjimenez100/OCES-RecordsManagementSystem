@@ -143,7 +143,6 @@ require 'partials/navs/NAV_OCESAdministrator.php';
             if (typeof aData._date == 'undefined') {
                 aData._date = new Date(aData[2]).getTime();
             }
-
             if (minDateFilter && !isNaN(minDateFilter)) {
                 if (aData._date < minDateFilter) {
                     return false;
