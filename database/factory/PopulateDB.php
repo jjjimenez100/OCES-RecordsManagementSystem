@@ -13,6 +13,9 @@ class PopulateDB{
     private $namesApiUrl = 'https://uinames.com/api/?region=germany&amount=';
     private $randomTextApiUrl = 'https://baconipsum.com/api/?type=all-meat&paras=1&start-with-lorem=1&format=text';
     private $randomSentenceApiUrl = 'https://baconipsum.com/api/?type=all-meat&sentences=1&start-with-lorem=1&format=text';
+    private $actualParticipation = ["Conceptualization", "Coordination Engagement",
+        "Resource Mobilization", "Documentation and Evaluation", "Lecturer", "Accreditor", "Trainer", "Facilitator"
+    , "Mentor", "Evaluator", "Resource Generation"];
     private $userIDs = [];
     private $semestersPerYr = 2;
 
@@ -51,7 +54,7 @@ class PopulateDB{
     }
 
     function populateReport($count){
-        ini_set('max_execution_time', 300); //medj matagal, dagdagan nalang if di padin abot
+        ini_set('max_execution_time', 500); //medj matagal, dagdagan nalang if di padin abot
         for($counter=1; $counter<=$count; $counter++){
             $newReport = new Report();
             $newReport->UserID = $this->userIDs[rand(0, count($this->userIDs)-1)];
@@ -63,7 +66,7 @@ class PopulateDB{
             $newReport->Venue = file_get_contents($this->randomTextApiUrl);
             $newReport->Time_Implemented = file_get_contents($this->randomTextApiUrl);
             $newReport->Brief_Narrative = file_get_contents($this->randomTextApiUrl);
-            $newReport->Actual_Participation = file_get_contents($this->randomTextApiUrl);
+            $newReport->Actual_Participation = $this->actualParticipation[rand(0, count($this->actualParticipation)-1)];
             $newReport->School_Year = $this->getRandomDate('Y');
             $newReport->Semester = rand(1, $this->semestersPerYr);
             $newReport->Remarks = rand(0, 1);

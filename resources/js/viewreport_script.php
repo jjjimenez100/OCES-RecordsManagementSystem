@@ -1,6 +1,12 @@
 <?php
-    require dirname(__FILE__).'/../../config/autoloader.php';
-    $reports = Report::all();
+    //require dirname(__FILE__).'/../../config/autoloader.php';
+    $reports = "";
+    if(isset($approving)){
+        $reports = Report::where('Remarks', 0)->get();
+    }
+    else{
+        $reports = Report::all();
+    }
 ?>
 
 <div id="no-more-tables">
@@ -12,7 +18,11 @@
                 <th class="text-center">Date</th>
                 <th class="text-center">Venue</th>
                 <th class="text-center">Beneficiaries</th>
-                <th class="text-center"><i class="fa fa-download" aria-hidden="true"></i> Files</th>
+                <?php if(isset($approving)): ?>
+                    <th class="text-center">Actions</th>
+                <?php else: ?>
+                    <th class="text-center"><i class="fa fa-download" aria-hidden="true"></i> Files</th>
+                <?php endif; ?>
                 <th class="d-none"></th>
                 <th class="d-none"></th>
                 <th class="d-none"></th>
@@ -23,36 +33,50 @@
 
         <tbody>
             <?php
-                foreach($reports as $key => $report):
+                $counter = 1;
+                foreach($reports as $report):
             ?>
-                <tr class="text-center">
-                    <td data-title="No.">
-                        <?php echo $key+1; ?>
-                    </td>
-                    <td data-title="Activity Title" style="word-break: break-all;">
-                        <?php echo $report->Activity_Title; ?>
-                    </td>
-                    <td data-title="Date">
-                        <?php echo $report->Date; ?>
-                    </td>
-                    <td data-title="Venue">
-                        <button type="button" class="btn btn-dark" data-toggle="popover" title="
-                        <?php echo $report->Activity_Title;?>'s Venue" data-content="<?php echo $report->Venue; ?>">
-                            View Venue <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                        </button>
-                    </td>
-                    <td data-title="Beneficiaries"><button type="button" class="btn btn-dark" data-toggle="popover" title="<?php echo $report->Activity_Title; ?>'s Beneficiaries" data-content="<?php echo $report->Beneficiaries; ?>">View Beneficiaries <i class="fa fa-arrow-right" aria-hidden="true"></i></button></td>
-                    <td data-title="Files" data-id="<?php echo $report->Activity_Code; ?>">
-                        <button class="btn btn-dark"><i class="fa fa-file-excel-o" aria-hidden="true"></i> .xlsx</button>
-                        <button class="btn btn-dark"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</button>
-                    </td>
-                    <td class="d-none"><?php echo $report->user->Department; ?></td>
-                    <td class="d-none"><?php echo $report->Actual_Participation; ?></td>
-                    <td class="d-none"><?php echo $report->UserID; ?></td>
-                    <td class="d-none"><?php echo $report->School_Year; ?></td>
-                    <td class="d-none"><?php echo $report->Semester; ?></td>
-                </tr>
+                    <?php
+                        if($report->Remarks == 0 && !isset($approving)):
+                            continue;
+                        endif;
+                    ?>
+                        <tr class="text-center">
+                            <td data-title="No.">
+                                <?php echo $counter ?>
+                            </td>
+                            <td data-title="Activity Title" style="word-break: break-all;">
+                                <?php echo $report->Activity_Title; ?>
+                            </td>
+                            <td data-title="Date">
+                                <?php echo $report->Date; ?>
+                            </td>
+                            <td data-title="Venue">
+                                <button type="button" class="btn btn-dark" data-toggle="popover" title="
+                                <?php echo $report->Activity_Title;?>'s Venue" data-content="<?php echo $report->Venue; ?>">
+                                    View Venue <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <td data-title="Beneficiaries"><button type="button" class="btn btn-dark" data-toggle="popover" title="<?php echo $report->Activity_Title; ?>'s Beneficiaries" data-content="<?php echo $report->Beneficiaries; ?>">View Beneficiaries <i class="fa fa-arrow-right" aria-hidden="true"></i></button></td>
+                            <?php if(isset($approving)): ?>
+                                <td class="text-center" style="vertical-align: middle;">
+                                    <button class="btn btn-success approve" data-activity="<?php echo $report->Activity_Title;?>" data-toggle="modal" data-target="#confirmationModal" data-id="<?php echo $report->Activity_Code; ?>"><i class="fa fa-check" aria-hidden="true"></i> Approve</button>
+                                    <button class="btn btn-danger reject" data-activity="<?php echo $report->Activity_Title;?>" data-toggle="modal" data-target="#confirmationModal" data-id="<?php echo $report->Activity_Code; ?>"><i class="fa fa-times" aria-hidden="true"></i> Reject</button>
+                                </td>
+                            <?php else: ?>
+                                <td data-title="Files" data-id="<?php echo $report->Activity_Code; ?>">
+                                    <button class="btn btn-dark"><i class="fa fa-file-excel-o" aria-hidden="true"></i> .xlsx</button>
+                                    <button class="btn btn-dark"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</button>
+                                </td>
+                            <?php endif; ?>
+                            <td class="d-none"><?php echo $report->user->Department; ?></td>
+                            <td class="d-none"><?php echo $report->Actual_Participation; ?></td>
+                            <td class="d-none"><?php echo $report->UserID; ?></td>
+                            <td class="d-none"><?php echo $report->School_Year; ?></td>
+                            <td class="d-none"><?php echo $report->Semester; ?></td>
+                        </tr>
             <?php
+                $counter++;
                 endforeach;
             ?>
         </tbody>

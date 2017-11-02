@@ -12,4 +12,4 @@ require '../database/factory/PopulateDB.php';
 $populate = new PopulateDB();
 //$populate->populateDepartment();
 //$populate->populateUser(15);
-$populate->populateReport(5);
+$populate->populateReport(10);

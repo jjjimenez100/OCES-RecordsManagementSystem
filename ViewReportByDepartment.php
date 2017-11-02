@@ -39,13 +39,14 @@ require 'partials/navs/NAV_OCESAdministrator.php';
                 </select>
             </div>
             <div class="col-sm-4">
-                
+
             </div>          
         </div>
     </div>    
     <hr style="border: 1px solid #CFB53B"><br>
     
     <?php
+        require 'config/autoloader.php';
         require 'resources/js/viewreport_script.php';
     ?>
 
@@ -57,30 +58,11 @@ require 'partials/navs/NAV_OCESAdministrator.php';
 <?php
     require 'partials/scripts.php';
 ?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.16/datatables.min.js"></script>
+<script type="text/javascript" src="resources/js/oces.functions-1.0.js"></script>
 <script>
-    $(document).ready(function() {
-        $(function () {
-            let popovers = $('[data-toggle="popover"]');
-            popovers.popover();
-            popovers.on('click', function(event){
-               $('[data-toggle="popover"]').not(this).popover('hide');
-            });
-        });
-
-       $('#tblReports').DataTable({
-           initComplete: function () {
-               let column = this.api().column(6);
-               $('#btn_info').on('change', function (){
-                   let val = $.fn.dataTable.util.escapeRegex(
-                       $(this).val()
-                   );
-
-                   column.search( val ? '^'+val+'$' : '', true, false ).draw();
-               });
-           }
-       });
+    $(document).ready(function(){
+        initViewByDepartmentInvolvement("#tblReports", 6, '#btn_info', "change");
     });
 </script>
 </html>

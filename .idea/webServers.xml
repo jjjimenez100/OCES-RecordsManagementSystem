@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ca845dd2-9e42-424a-9e54-73aa8b2d68f3" name="Xampp" url="http://localhost/OCES/">
+        <fileTransfer port="0" mountedRoot="C:\xampp\htdocs\OCES" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -68,6 +68,7 @@ require 'partials/navs/NAV_OCESAdministrator.php';
     <hr style="border: 1px solid #CFB53B"><br>
     
     <?php
+        require 'config/autoloader.php';
         require 'resources/js/viewreport_script.php';
     ?>
 
@@ -80,123 +81,11 @@ require 'partials/navs/NAV_OCESAdministrator.php';
     require 'partials/scripts.php';
 ?>
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.16/datatables.min.js"></script>
+<script type="text/javascript" src="resources/js/oces.functions-1.0.js"></script>
 <script>
-    const SEMESTERS_PER_YR = 2;
-    let fromSchoolYear = selectorFactory("from_year");
-    let toSchoolYear = selectorFactory("to_year");
-    let semesterFilter = selectorFactory("semester");
-    let fromDate = selectorFactory("from");
-    let toDate = selectorFactory("to");
-    let exactDate = selectorFactory("exact");
-
-    $(document).ready(function() {
-        $(function () {
-            let popovers = $('[data-toggle="popover"]');
-            popovers.popover();
-            popovers.on('click', function(event){
-                $('[data-toggle="popover"]').not(this).popover('hide');
-            });
-        });
-
-        let table = $('#tblReports').DataTable();
-        fromDate.addEventListener('change', function(event){
-            table.draw();
-            disable();
-        });
-        toDate.addEventListener('change', function(event){
-            table.draw();
-            disable();
-        });
-        exactDate.addEventListener('change', function(event){
-            table.draw();
-            disable();
-        });
-        fromSchoolYear.addEventListener('change', function(event){
-           table.draw();
-        });
-        toSchoolYear.addEventListener('change', function(event){
-            table.draw();
-        });
-        semesterFilter.addEventListener('change', function(event){
-            table.draw();
-        });
-        populateComboBox(fromSchoolYear, new Date().getFullYear(), 1950, "From School Year");
-        populateComboBox(toSchoolYear, new Date().getFullYear(), 1950, "To School Year");
-        populateComboBox(semesterFilter, SEMESTERS_PER_YR, 1, "Semester");
+    $(document).ready(function(){
+       initViewByDate(["from_year", "to_year", "semester", "from", "to", "exact"],
+           "#tblReports", 2010, new Date().getFullYear(), 2);
     });
-
-    function disable(){
-        exactDate.disabled = (fromDate.value != "" || toDate.value != "") ? true : false ;
-        fromDate.disabled = (exactDate.value != "");
-        toDate.disabled = (exactDate.value != "");
-    }
-
-    $.fn.dataTableExt.afnFiltering.push(
-        function(oSettings, aData, iDataIndex) {
-            let minDateFilter = new Date(fromDate.value).getTime();
-            let maxDateFilter = new Date(toDate.value).getTime();
-            let exactDateFilter = new Date(exactDate.value).getTime();
-            let minSY = fromSchoolYear.value;
-            let maxSY = toSchoolYear.value;
-            let sem = semesterFilter.value;
-            // /9
-            if (typeof aData._date == 'undefined') {
-                aData._date = new Date(aData[2]).getTime();
-            }
-            if (minDateFilter && !isNaN(minDateFilter)) {
-                if (aData._date < minDateFilter) {
-                    return false;
-                }
-            }
-
-            if (maxDateFilter && !isNaN(maxDateFilter)) {
-                if (aData._date > maxDateFilter) {
-                    return false;
-                }
-            }
-
-            if (exactDateFilter && !isNaN(exactDateFilter)) {
-                if (aData._date != exactDateFilter) {
-                    return false;
-                }
-            }
-
-            if(minSY && !isNaN(minSY)){
-                if(aData[9] < minSY){
-                    return false;
-                }
-            }
-
-            if(maxSY && !isNaN(maxSY)){
-                if(aData[9] > maxSY){
-                    return false;
-                }
-            }
-
-            if(sem && !isNaN(sem)){
-                if(aData[10] != sem){
-                    return false;
-                }
-            }
-
-            return true;
-        }
-    );
-
-    function selectorFactory(identifier){
-        return (document.getElementById(identifier) === null) ?
-            document.getElementsByClassName(identifier)
-            : document.getElementById(identifier);
-    }
-
-    function populateComboBox(selector, start, end, label){
-        selector.innerHTML += `<option selected disabled>${label}</option>`;
-        //selector.innerHTML += '<option selected disabled>'+ label +'</option>';
-        for(let counter = start; counter >= end; counter--){
-            //selector.innerHTML += '<option>' + counter + '</option>'
-            selector.innerHTML += `<option>${counter}</option>`;
-        }
-    }
-
 </script>
 </html>

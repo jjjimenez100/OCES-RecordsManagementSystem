@@ -1,3 +1,19 @@
+<?php
+    require 'config/autoloader.php';
+
+    if(isset($_POST["reportID"]) && isset($_POST["isApproved"])){
+        $report = Report::find($_POST["reportID"]);
+        if($report){
+            if($_POST["isApproved"] == "true"){
+                $report->Remarks = 1;
+                $report->save();
+            }
+            else{
+                $report->delete();
+            }
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,99 +26,53 @@
     <link rel="shortcut icon" href="resources/images/oces.ico">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
-
 <body>
-
 <!-- NAVIGATION LINK -->
 <?php
     require 'partials/navs/NAV_OCESAdministrator.php';
 ?>
 <!-- END NAVIGATION LINK -->
-
 <br>
 <h1 class="text-center" style="padding-top: 50px"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Approval of Reports</h1>
 <hr>
-<p class="lead text-center"><i class="fa fa-search" aria-hidden="true"></i> Filter data within a certain date range:</p>
-<div class="row">
-    <div class="col-md-4"></div>
-    <div class="form-group col-md-2">
-        <input type="date" class="form-control" id="from" name="from">
+<!-- Modal -->
+<div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="confirmationModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmationModalLabel">Confirmation</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="confirmationText">
+                <!-- dom manipulation goes here -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success" id="confirmButton"><i class="fa fa-check-square-o" aria-hidden="true"></i> Confirm</button>
+            </div>
+        </div>
     </div>
-    <div class="form-group col-md-2">
-        <input type="date" class="form-control" id="to">
-    </div>
-    <div class="col-md-4"></div>
 </div>
-<table class="table table-striped table-hover table-sm" id="tblReports">
-    <thead class="table-dark">
-    <tr class="text-center">
-        <th class="text-center">#</th>
-        <th class="text-center">Report Name</th>
-        <th class="text-center">Participation</th>
-        <th class="text-center">Venue</th>
-        <th class="text-center">Date</th>
-        <th class="text-center">Objectives</th>
-        <th class="text-center">Beneficiaries</th>
-        <th class="text-center">Proponents</th>
-        <th class="text-center">Actions</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    <tr>
-        <th scope="row">1</th>
-        <td style="word-break: break-all;">asgasgashgahashahsa asgasgashgahashahsa</td>
-        <td>Sinong</td>
-        <td>Di mawiwili</td>
-        <td>Dahil sa</td>
-        <td>game na to</td>
-        <td>ay di ka</td>
-        <td>magsisisi</td>
-        <td class="text-center" style="vertical-align: middle;">
-            <button class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i> Approve</button>
-            <button class="btn btn-danger"><i class="fa fa-times" aria-hidden="true"></i> Reject</button>
-        </td>
-    </tr>
-    <tr>
-        <th scope="row">1</th>
-        <td>wowowee</td>
-        <td>Sinong</td>
-        <td>Di mawiwili</td>
-        <td>Dahil sa</td>
-        <td>game na to</td>
-        <td>ay di ka</td>
-        <td>magsisisi</td>
-        <td class="text-center">
-            <button class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i> Approve</button>
-            <button class="btn btn-danger"><i class="fa fa-times" aria-hidden="true"></i> Reject</button>
-        </td>
-    </tr>
-    <tr>
-        <th scope="row">1</th>
-        <td>Wowowee</td>
-        <td>Sinong</td>
-        <td>Di mawiwili</td>
-        <td>Dahil sa</td>
-        <td>game na to</td>
-        <td>ay di ka</td>
-        <td>magsisisi</td>
-        <td class="text-center">
-            <button class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i> Approve</button>
-            <button class="btn btn-danger"><i class="fa fa-times" aria-hidden="true"></i> Reject</button>
-        </td>
-    </tr>
-    </tbody>
-</table>
-
+<!--END MODAL-->
+<?php
+    $approving = true;
+    require 'resources/js/viewreport_script.php';
+?>
+<form action="<?php echo htmlspecialchars("ApproveReport.php");?>" method="POST" id="hiddenForm">
+    <input type="hidden" name="reportID" id="reportID">
+    <input type="hidden" name="isApproved" id="isApproved">
+</form>
 </body>
 
 <?php
-require 'partials/scripts.php';
+    require 'partials/scripts.php';
 ?>
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.16/datatables.min.js"></script>
+<script type="text/javascript" src="resources/js/oces.functions-1.0.js"></script>
 <script>
-    $(document).ready(function() {
-        $('#tblReports').DataTable();
-    });
+    $(document).ready(initApproveReport(["confirmationText", "confirmButton",
+        "hiddenForm", "reportID", "isApproved", "approve", "reject"], "#tblReports"));
 </script>
 </html>
