@@ -4,6 +4,10 @@
     if(isset($approving)){
         $reports = Report::where('Remarks', 0)->get();
     }
+    else if(isset($individualViewing)){
+        $userLoggedIn = 25570373; //paltan to if okay na yung login pati auth
+        $reports = Report::where('UserID', $userLoggedIn)->get();
+    }
     else{
         $reports = Report::all();
     }
