@@ -44,7 +44,7 @@ require 'partials/navs/NAV_OCESAdministrator.php';
     
     <?php
         require 'config/autoloader.php';
-        require 'resources/js/viewreport_script.php';
+        require 'partials/viewreport_script.php';
     ?>
 
 </div>
@@ -53,7 +53,7 @@ require 'partials/navs/NAV_OCESAdministrator.php';
 
 <?php
     require 'partials/scripts.php';
-    require 'resources/js/participation_script.php';
+    require 'partials/participation_script.php';
 ?>
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.16/datatables.min.js"></script>
 <script type="text/javascript" src="resources/js/oces.functions-1.0.js"></script>

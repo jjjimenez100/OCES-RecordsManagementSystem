@@ -58,18 +58,11 @@ require 'partials/navs/NAV_OCESAdministrator.php';
         </div>
     </div>
 
-
-    <div class="form-group row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-10 form-group row">
-            <div class="col-sm-1"><button type="submit" class="btn" id="btn_create">SEARCH</button></div>
-        </div>
-    </div>
     <hr style="border: 1px solid #CFB53B"><br>
     
     <?php
         require 'config/autoloader.php';
-        require 'resources/js/viewreport_script.php';
+        require 'partials/viewreport_script.php';
     ?>
 
 </div>

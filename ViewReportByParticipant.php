@@ -29,7 +29,7 @@ require 'partials/navs/NAV_OCESAdministrator.php';
     
     <?php
     require 'config/autoloader.php';
-        require 'resources/js/viewreport_script.php';
+        require 'partials/viewreport_script.php';
     ?>
 
 </div>

@@ -37,7 +37,15 @@ CREATE TABLE `tbldepartment` (
 --
 
 INSERT INTO `tbldepartment` (`Department`) VALUES
-('CICT');
+('Basic Education'),
+('College of Criminal Justice Education and Forensics'),
+('College of Information and Communications Technology'),
+('School of Arts and Sciences'),
+('School of Business and Accountancy'),
+('School of Education'),
+('School of Engineering and Architecture'),
+('School of Hospitality and Tourism Management'),
+('School of Nursing and Allied Medical Sciences');
 
 -- --------------------------------------------------------
 
@@ -86,7 +94,7 @@ CREATE TABLE `tbluser` (
 --
 
 INSERT INTO `tbluser` (`UserID`, `First_Name`, `Middle_Name`, `Last_Name`, `Date_Of_Employment`, `Position_Level`, `Department`, `Username`, `Password`) VALUES
-(20424565, 'Ariane', 'Del Rosario', 'Nulud', '2017-10-20', 'Staff OCES', 'CICT', 'ariane011022033@hau.edu.ph', 'ariane');
+(20424565, 'Ariane', 'Del Rosario', 'Nulud', '2017-10-20', 'Staff OCES', 'College of Information and Communications Technology', 'ariane011022033@hau.edu.ph', 'ariane');
 
 -- --------------------------------------------------------
 
@@ -154,20 +162,20 @@ ALTER TABLE `tblvolunteers`
 -- Constraints for table `tblreports`
 --
 ALTER TABLE `tblreports`
-  ADD CONSTRAINT `tblreports_ibfk_1` FOREIGN KEY (`UserID`) REFERENCES `tbluser` (`UserID`) ON DELETE CASCADE;
+  ADD CONSTRAINT `tblreports_ibfk_1` FOREIGN KEY (`UserID`) REFERENCES `tbluser` (`UserID`);
 
 --
 -- Constraints for table `tbluser`
 --
 ALTER TABLE `tbluser`
-  ADD CONSTRAINT `tbluser_ibfk_1` FOREIGN KEY (`Department`) REFERENCES `tbldepartment` (`Department`) ON DELETE CASCADE;
+  ADD CONSTRAINT `tbluser_ibfk_1` FOREIGN KEY (`Department`) REFERENCES `tbldepartment` (`Department`) ON UPDATE CASCADE ON DELETE SET NULL;
 
 --
 -- Constraints for table `tblvolunteers`
 --
 ALTER TABLE `tblvolunteers`
-  ADD CONSTRAINT `tblvolunteers_ibfk_1` FOREIGN KEY (`Activity_Code`) REFERENCES `tblreports` (`Activity_Code`) ON DELETE CASCADE,
-  ADD CONSTRAINT `tblvolunteers_ibfk_2` FOREIGN KEY (`UserID`) REFERENCES `tbluser` (`UserID`) ON DELETE CASCADE;
+  ADD CONSTRAINT `tblvolunteers_ibfk_1` FOREIGN KEY (`Activity_Code`) REFERENCES `tblreports` (`Activity_Code`),
+  ADD CONSTRAINT `tblvolunteers_ibfk_2` FOREIGN KEY (`UserID`) REFERENCES `tbluser` (`UserID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

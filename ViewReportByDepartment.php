@@ -27,15 +27,13 @@ require 'partials/navs/NAV_OCESAdministrator.php';
                 <select class="selectpicker" id="btn_info" style="height: 37.5px; padding-bottom: 5px">
                     <option  selected disabled>Select Department</option>
                     <option value="">All</option>
-                    <option>Basic Education</option>
-                    <option>CCJEF</option>
-                    <option>CICT</option>
-                    <option>SAS</option>
-                    <option>SBA</option>
-                    <option>SEA</option>
-                    <option>SED</option>
-                    <option>SHTM</option>
-                    <option>SNAMS</option>
+                    <?php
+                        require 'config/autoloader.php';
+                        $departments = Department::all();
+                        foreach($departments as $department){
+                            echo '<option>'.$department->Department.'</option>';
+                        }
+                    ?>
                 </select>
             </div>
             <div class="col-sm-4">
@@ -46,8 +44,7 @@ require 'partials/navs/NAV_OCESAdministrator.php';
     <hr style="border: 1px solid #CFB53B"><br>
     
     <?php
-        require 'config/autoloader.php';
-        require 'resources/js/viewreport_script.php';
+        require 'partials/viewreport_script.php';
     ?>
 
 </div>
