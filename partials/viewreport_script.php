@@ -64,8 +64,8 @@
                             <td data-title="Beneficiaries"><button type="button" class="btn btn-dark" data-toggle="popover" title="<?php echo $report->Activity_Title; ?>'s Beneficiaries" data-content="<?php echo $report->Beneficiaries; ?>">View Beneficiaries <i class="fa fa-arrow-right" aria-hidden="true"></i></button></td>
                             <?php if(isset($approving)): ?>
                                 <td class="text-center" style="vertical-align: middle;">
-                                    <button class="btn btn-success approve" data-activity="<?php echo $report->Activity_Title;?>" data-toggle="modal" data-target="#confirmationModal" data-id="<?php echo $report->Activity_Code; ?>"><i class="fa fa-check" aria-hidden="true"></i> Approve</button>
-                                    <button class="btn btn-danger reject" data-activity="<?php echo $report->Activity_Title;?>" data-toggle="modal" data-target="#confirmationModal" data-id="<?php echo $report->Activity_Code; ?>"><i class="fa fa-times" aria-hidden="true"></i> Reject</button>
+                                    <button class="btn btn-success approve" data-activity="<?php echo $report->Activity_Title;?>" data-toggle="modal" data-target="#modalAdd" data-id="<?php echo $report->Activity_Code; ?>"><i class="fa fa-check" aria-hidden="true"></i> Approve</button>
+                                    <button class="btn btn-danger reject" data-activity="<?php echo $report->Activity_Title;?>" data-toggle="modal" data-target="#modalAdd" data-id="<?php echo $report->Activity_Code; ?>"><i class="fa fa-times" aria-hidden="true"></i> Reject</button>
                                 </td>
                             <?php else: ?>
                                 <td data-title="Files" data-id="<?php echo $report->Activity_Code; ?>">

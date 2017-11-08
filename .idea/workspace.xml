@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="562af073-ce0e-40b8-9ff1-5fa91737b76c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/asfas.txt" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/samplemodal_script.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewReportByDate.php" afterPath="$PROJECT_DIR$/ViewReportByDate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewReportByDepartment.php" afterPath="$PROJECT_DIR$/ViewReportByDepartment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewReportByInvolvement.php" afterPath="$PROJECT_DIR$/ViewReportByInvolvement.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewReportByParticipant.php" afterPath="$PROJECT_DIR$/ViewReportByParticipant.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/dboces .sql" afterPath="$PROJECT_DIR$/database/dboces .sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/js/date_script.php" afterPath="$PROJECT_DIR$/partials/date_script.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/js/participation_script.php" afterPath="$PROJECT_DIR$/partials/participation_script.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/js/viewreport_script.php" afterPath="$PROJECT_DIR$/partials/viewreport_script.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApproveReport.php" afterPath="$PROJECT_DIR$/ApproveReport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/viewreport_script.php" afterPath="$PROJECT_DIR$/partials/viewreport_script.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/oces.functions-1.0.js" afterPath="$PROJECT_DIR$/resources/js/oces.functions-1.0.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,7 +26,48 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="ApproveReport.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ApproveReport.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="43" column="16" lean-forward="true" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewreport_script.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/partials/viewreport_script.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="73" column="37" lean-forward="true" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="oces.functions-1.0.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/js/oces.functions-1.0.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="130" column="105" lean-forward="false" selection-start-line="130" selection-start-column="105" selection-end-line="130" selection-end-column="105" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="samplemodal_script.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/partials/samplemodal_script.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -53,7 +89,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/css/styles.css" />
         <option value="$PROJECT_DIR$/CreateReport.php" />
         <option value="$PROJECT_DIR$/prototypes/jstest.html" />
         <option value="$PROJECT_DIR$/prototypes/jstest.php" />
@@ -93,9 +128,7 @@
         <option value="$PROJECT_DIR$/Approver.php" />
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/oces.functions-1.0.js" />
-        <option value="$PROJECT_DIR$/ApproveReport.php" />
         <option value="$PROJECT_DIR$/database/factory/PopulateDB.php" />
-        <option value="$PROJECT_DIR$/resources/js/oces.functions-1.0.js" />
         <option value="$PROJECT_DIR$/resources/js/viewreport_script.php" />
         <option value="$PROJECT_DIR$/ViewReport_Faculty_NTP.php" />
         <option value="$PROJECT_DIR$/database/dboces .sql" />
@@ -104,6 +137,9 @@
         <option value="$PROJECT_DIR$/ViewReportByDepartment.php" />
         <option value="$PROJECT_DIR$/prototypes/GenerateData.php" />
         <option value="$PROJECT_DIR$/ViewReportByDate.php" />
+        <option value="$PROJECT_DIR$/ApproveReport.php" />
+        <option value="$PROJECT_DIR$/partials/viewreport_script.php" />
+        <option value="$PROJECT_DIR$/resources/js/oces.functions-1.0.js" />
       </list>
     </option>
   </component>
@@ -127,8 +163,7 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 7" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1378" />
+    <option name="width" value="1370" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -150,6 +185,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -162,9 +198,54 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OCES" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OCES" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OCES" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OCES" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OCES" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OCES" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -176,19 +257,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Documents\BS in CompSci\OCES\resources\css" />
-      <recent name="F:\Documents\BS in CompSci\OCES\resources\images" />
-      <recent name="F:\Documents\BS in CompSci\OCES\temp" />
-      <recent name="F:\Documents\BS in CompSci\OCES\config" />
-      <recent name="F:\Documents\BS in CompSci\OCES\resources" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Documents\BS in CompSci\OCES\partials" />
       <recent name="F:\Documents\BS in CompSci\OCES\resources\js" />
       <recent name="F:\Documents\BS in CompSci\OCES\database\factory" />
       <recent name="F:\Documents\BS in CompSci\OCES" />
       <recent name="F:\Documents\BS in CompSci\OCES\database" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Documents\BS in CompSci\OCES\partials" />
+      <recent name="F:\Documents\BS in CompSci\OCES\resources\css" />
+      <recent name="F:\Documents\BS in CompSci\OCES\resources\images" />
+      <recent name="F:\Documents\BS in CompSci\OCES\temp" />
+      <recent name="F:\Documents\BS in CompSci\OCES\config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -203,7 +284,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.ViewReportByDate.php">
+  <component name="RunManager" selected="JavaScript Debug.ApproveReport.php">
     <configuration default="false" name="ViewReportByInvolvement.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/OCES/ViewReportByInvolvement.php">
       <method />
     </configuration>
@@ -213,10 +294,10 @@
     <configuration default="false" name="ViewReportByDate.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/OCES/ViewReportByDate.php">
       <method />
     </configuration>
-    <configuration default="false" name="GenerateData.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/OCES/prototypes/GenerateData.php">
+    <configuration default="false" name="ViewReportByDepartment.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/OCES/ViewReportByDepartment.php">
       <method />
     </configuration>
-    <configuration default="false" name="ViewReportByDepartment.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/OCES/ViewReportByDepartment.php">
+    <configuration default="false" name="ApproveReport.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/OCES/ApproveReport.php">
       <method />
     </configuration>
     <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
@@ -297,16 +378,16 @@
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.ViewReportByInvolvement.php" />
       <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.ViewReportByParticipant.php" />
       <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.ViewReportByDate.php" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.GenerateData.php" />
-      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.ViewReportByDepartment.php" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.ViewReportByDepartment.php" />
+      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.ApproveReport.php" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.ViewReportByDate.php" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.ViewReportByDepartment.php" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.ViewReportByInvolvement.php" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.ViewReportByParticipant.php" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.GenerateData.php" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.ApproveReport.php" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.ViewReportByDate.php" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.ViewReportByDepartment.php" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.ViewReportByInvolvement.php" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.ViewReportByParticipant.php" />
       </list>
     </recent_temporary>
   </component>
@@ -341,12 +422,13 @@
       <workItem from="1509594901235" duration="26761000" />
       <workItem from="1509658010440" duration="1071000" />
       <workItem from="1509667467877" duration="2496000" />
-      <workItem from="1510068802187" duration="3845000" />
+      <workItem from="1510068802187" duration="4407000" />
+      <workItem from="1510131093139" duration="1546000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135027000" />
+    <option name="totallyTimeSpent" value="137135000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -358,9 +440,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
+    <frame x="-8" y="0" width="1370" height="744" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2579666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26183206" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -415,14 +497,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HP_SystemAdministrator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="30" column="11" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HP_UniversityAdministrator.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
@@ -557,9 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2020">
           <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#90#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -610,7 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -649,7 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -661,19 +730,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/asfas.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-780">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/asfas.txt" />
     <entry file="file://$PROJECT_DIR$/database/dboces .sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-200">
           <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -681,15 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-286">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApproveReport.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -705,23 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/oces.functions-1.0.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="163" column="9" lean-forward="false" selection-start-line="163" selection-start-column="9" selection-end-line="163" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/viewreport_script.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-500">
-          <caret line="8" column="64" lean-forward="false" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -729,7 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -737,7 +771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -769,6 +802,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
           <caret line="38" column="25" lean-forward="false" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/samplemodal_script.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApproveReport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="43" column="16" lean-forward="true" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/viewreport_script.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="73" column="37" lean-forward="true" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/oces.functions-1.0.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="130" column="105" lean-forward="false" selection-start-line="130" selection-start-column="105" selection-end-line="130" selection-end-column="105" />
           <folding />
         </state>
       </provider>

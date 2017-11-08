@@ -36,29 +36,15 @@
 <h1 class="text-center" style="padding-top: 50px"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Approval of Reports</h1>
 <hr>
 <!-- Modal -->
-<div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="confirmationModal" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="confirmationModalLabel">Confirmation</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body" id="confirmationText">
-                <!-- dom manipulation goes here -->
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-success" id="confirmButton"><i class="fa fa-check-square-o" aria-hidden="true"></i> Confirm</button>
-            </div>
-        </div>
-    </div>
-</div>
+
+<?php
+    require 'partials/samplemodal_script.php';
+?>
+
 <!--END MODAL-->
 <?php
     $approving = true;
-    require 'resources/js/viewreport_script.php';
+    require 'partials/viewreport_script.php';
 ?>
 <form action="<?php echo htmlspecialchars("ApproveReport.php");?>" method="POST" id="hiddenForm">
     <input type="hidden" name="reportID" id="reportID">
@@ -72,7 +58,7 @@
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.16/datatables.min.js"></script>
 <script type="text/javascript" src="resources/js/oces.functions-1.0.js"></script>
 <script>
-    $(document).ready(initApproveReport(["confirmationText", "confirmButton",
+    $(document).ready(initApproveReport(["modal-body", "btn_create",
         "hiddenForm", "reportID", "isApproved", "approve", "reject"], "#tblReports"));
 </script>
 </html>

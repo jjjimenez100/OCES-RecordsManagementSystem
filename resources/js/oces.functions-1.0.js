@@ -104,7 +104,7 @@ function initApproveReport(identifs = [], tbl){
 }
 
 function initApproveVars(identifiers = []){
-    confirmationMessage = selectorFactory(identifiers[0]);
+    confirmationMessage = selectorFactory(identifiers[0])[0];
     confirmButton = selectorFactory(identifiers[1]);
     hiddenForm = selectorFactory(identifiers[2]);
     hiddenReportId = selectorFactory(identifiers[3]);
@@ -128,14 +128,14 @@ function onApprove(event){
     approve = true;
     selectedId = this.getAttribute("data-id");
     let activityTitle = this.getAttribute("data-activity");
-    confirmationMessage.innerHTML = `Are you sure you want to approve report: ${activityTitle}?`;
+    confirmationMessage.innerHTML = `<p>Are you sure you want to approve report: <b>${activityTitle}</b>?</p>`;
 }
 
 function onReject(event){
     approve = false;
     selectedId = this.getAttribute("data-id");
     let activityTitle = this.getAttribute("data-activity");
-    confirmationMessage.innerHTML = `Are you sure you want to reject report: ${activityTitle}?`;;
+    confirmationMessage.innerHTML = `<p>Are you sure you want to reject report: <b>${activityTitle}</b>?</p>`;
 }
 
 function submit(){
