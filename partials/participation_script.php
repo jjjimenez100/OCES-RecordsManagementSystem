@@ -25,7 +25,8 @@
                     "Assistance in Community Organizing Outcome Evaluation"];
 
         var grpD = ["Publications in practitioner journals or other venues aimed directly at improving management /community practices ",
-                    "Research collaboration with in campus groups/ GOs/NGOs for community projects - Case studies based on research that lead to solutions to business /community problems",
+                    "Research collaboration with in campus groups/ GOs/NGOs for community projects",
+                    "  - Case studies based on research that lead to solutions to business /community problems",
                     "Adoption of new practices or operational approaches as a result of faculty scholarship",
                     "Presentations and workshops for business and management professionals; community extension practitioner",
                     "Tools/methods developed for partner communities",
@@ -71,10 +72,11 @@
             case 'D':
                 participation.options.length = 0;
                 createOption2(participation);
+
                 for (i = 0; i < grpD.length; i++) 
                 {
-                    createOption(participation, grpD[i], grpD[i]);
-                }
+                    createOption(participation, grpD[i], grpD[i]);                    
+                }createOption3(participation);
                 break;
 
             case 'E':
@@ -118,6 +120,11 @@
         ddl.options.add(opt);
 
         document.getElementById("participation").options[0].disabled = true;
+    }
+
+    function createOption3(ddl) 
+    {
+        document.getElementById("participation").options[3].disabled = true;
     }
 
 </script>

@@ -6,7 +6,4 @@
  * Time: 1:01 AM
  */
 
-require '../config/autoloader.php';
-
-$report = Report::find(1);
-echo $report->user->Department;
+echo $_SESSION['navbar'];

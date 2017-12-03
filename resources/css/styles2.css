@@ -10,6 +10,7 @@
     /* Force table to not be like tables anymore */
   #no-more-tables table, 
   #no-more-tables thead, 
+  #no-more-tables tfoot, 
   #no-more-tables tbody, 
   #no-more-tables th, 
   #no-more-tables td, 
@@ -64,4 +65,3 @@
     content: attr(data-title); 
   }
 }
-    

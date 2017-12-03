@@ -2,11 +2,117 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="562af073-ce0e-40b8-9ff1-5fa91737b76c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/samplemodal_script.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/module_table_bottom.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/module_table_top.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/DatabaseConnection.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/middleware/RoleMiddleware.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/CreateAccount.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/createaccount_script.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/cssmetafiles.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/department/AddDepartment.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/department/EditDepartment.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/disablekeys_script.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/javascriptfiles.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/login/Login.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/login/Logout.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/login/RedirectIfLoggedIn.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/login/RememberMe.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/login_script.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/modals/confirmmodal_script.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/modals/modal_script.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/navigationbar.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/viewingjsfiles.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/bootstrap-grid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/bootstrap-grid.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/bootstrap-grid.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/bootstrap-grid.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/bootstrap-reboot.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/bootstrap-reboot.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/bootstrap-reboot.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/bootstrap-reboot.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/bootstrap.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/HELP-US-OUT.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/less/animated.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/less/bordered-pulled.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/less/core.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/less/fixed-width.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/less/font-awesome.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/less/icons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/less/larger.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/less/list.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/less/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/less/path.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/less/rotated-flipped.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/less/screen-reader.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/less/stacked.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/less/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/scss/_animated.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/scss/_bordered-pulled.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/scss/_core.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/scss/_fixed-width.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/scss/_icons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/scss/_larger.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/scss/_list.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/scss/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/scss/_path.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/scss/_rotated-flipped.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/scss/_screen-reader.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/scss/_stacked.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/scss/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/scss/font-awesome.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/js/jquery-3.2.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp/UpdateUserAccount.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/CreateUserAccount.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/UpdateDepartments.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CreateReport.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CreateReport_OCESAdministrator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CreateReport_OCESStaff_CSCBRep.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CreateUserAccount.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HP_OCESAdministrator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HP_OCESStaff_CSCBRep.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HP_SystemAdministrator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HP_UniversityAdministrator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/UpdateUserAccount.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ViewReport.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ViewReport_OCESAdministrator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ViewReport_UniversityAdministrator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ViewReports.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/partials/header.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/partials/navs/NAV_Faculty_NTP.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/partials/navs/NAV_OCESAdministrator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/partials/navs/NAV_OCESStaff_CSCBRep.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/partials/navs/NAV_SystemAdministrator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/partials/navs/NAV_UniversityAdministrator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/partials/scripts.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/partials/stylesheets.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApproveReport.php" afterPath="$PROJECT_DIR$/ApproveReport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/autoloader.php" afterPath="$PROJECT_DIR$/config/autoloader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/date_script.php" afterPath="$PROJECT_DIR$/partials/date_script.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/participation_script.php" afterPath="$PROJECT_DIR$/partials/participation_script.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/viewreport_script.php" afterPath="$PROJECT_DIR$/partials/viewreport_script.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/oces.functions-1.0.js" afterPath="$PROJECT_DIR$/resources/js/oces.functions-1.0.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prototypes/test.php" afterPath="$PROJECT_DIR$/prototypes/test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/styles.css" afterPath="$PROJECT_DIR$/resources/css/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/styles2.css" afterPath="$PROJECT_DIR$/resources/css/styles2.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ApproveReport.php" afterPath="$PROJECT_DIR$/views/ApproveReport.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/HP_Faculty_NTP.php" afterPath="$PROJECT_DIR$/views/HomePage.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/UpdateProfile.php" afterPath="$PROJECT_DIR$/temp/UpdateProfile.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ViewReportByDate.php" afterPath="$PROJECT_DIR$/views/ViewReportByDate.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ViewReportByDepartment.php" afterPath="$PROJECT_DIR$/views/ViewReportByDepartment.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ViewReportByInvolvement.php" afterPath="$PROJECT_DIR$/views/ViewReportByInvolvement.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ViewReportByParticipant.php" afterPath="$PROJECT_DIR$/views/ViewReportByParticipant.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ViewReport_Faculty_NTP.php" afterPath="$PROJECT_DIR$/views/ViewUserRelatedReports.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/partials/samplemodal_script.php" afterPath="$PROJECT_DIR$/partials/modals/approvingmodal.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,49 +131,11 @@
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="OCES" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ApproveReport.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ApproveReport.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="43" column="16" lean-forward="true" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="viewreport_script.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/partials/viewreport_script.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="73" column="37" lean-forward="true" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="oces.functions-1.0.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/js/oces.functions-1.0.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="130" column="105" lean-forward="false" selection-start-line="130" selection-start-column="105" selection-end-line="130" selection-end-column="105" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="samplemodal_script.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/partials/samplemodal_script.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -81,6 +149,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>$alphabet</find>
+      <find>modalEnter</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -89,57 +158,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CreateReport.php" />
-        <option value="$PROJECT_DIR$/prototypes/jstest.html" />
-        <option value="$PROJECT_DIR$/prototypes/jstest.php" />
-        <option value="$PROJECT_DIR$/CreateReport_OCESAdministrator.php" />
-        <option value="$PROJECT_DIR$/CreateReport_OCESStaff_CSCBRep.php" />
-        <option value="$PROJECT_DIR$/CreateUserAccount.php" />
-        <option value="$PROJECT_DIR$/HP_Faculty_NTP.php" />
-        <option value="$PROJECT_DIR$/HP_OCESAdministrator.php" />
-        <option value="$PROJECT_DIR$/HP_OCESStaff_CSCBRep.php" />
-        <option value="$PROJECT_DIR$/HP_SystemAdministrator.php" />
-        <option value="$PROJECT_DIR$/HP_UniversityAdministrator.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/UpdateProfile.php" />
-        <option value="$PROJECT_DIR$/UpdateUserAccount.php" />
-        <option value="$PROJECT_DIR$/partials/navs/NAV_Faculty_NTP.php" />
-        <option value="$PROJECT_DIR$/partials/navs/NAV_OCESAdministrator.php" />
-        <option value="$PROJECT_DIR$/partials/navs/NAV_OCESStaff_CSCBRep.php" />
-        <option value="$PROJECT_DIR$/partials/navs/NAV_SystemAdministrator.php" />
-        <option value="$PROJECT_DIR$/partials/navs/NAV_UniversityAdministrator.php" />
-        <option value="$PROJECT_DIR$/ViewReport.php" />
-        <option value="$PROJECT_DIR$/ViewReport_OCESAdministrator.php" />
-        <option value="$PROJECT_DIR$/ViewReport_UniversityAdministrator.php" />
-        <option value="$PROJECT_DIR$/prototypes/PopulateDB.php" />
-        <option value="$PROJECT_DIR$/PopulateDB.php" />
-        <option value="$PROJECT_DIR$/prototypes/Test.php" />
-        <option value="$PROJECT_DIR$/Test.php" />
-        <option value="$PROJECT_DIR$/database/PopulateDB.php" />
-        <option value="$PROJECT_DIR$/config/autoloader.php" />
-        <option value="$PROJECT_DIR$/prototypes/test2.php" />
-        <option value="$PROJECT_DIR$/models/Department.php" />
-        <option value="$PROJECT_DIR$/models/Volunteer.php" />
-        <option value="$PROJECT_DIR$/prototypes/SampleDBManip.php" />
-        <option value="$PROJECT_DIR$/controllers/ViewReportsController.php" />
-        <option value="$PROJECT_DIR$/models/Report.php" />
-        <option value="$PROJECT_DIR$/prototypes/test.php" />
-        <option value="$PROJECT_DIR$/partials/scripts.php" />
-        <option value="$PROJECT_DIR$/Approver.php" />
-        <option value="$PROJECT_DIR$/test.php" />
-        <option value="$PROJECT_DIR$/oces.functions-1.0.js" />
-        <option value="$PROJECT_DIR$/database/factory/PopulateDB.php" />
-        <option value="$PROJECT_DIR$/resources/js/viewreport_script.php" />
+        <option value="$PROJECT_DIR$/prototypes/checker.php" />
+        <option value="$PROJECT_DIR$/prototypes/sample.php" />
         <option value="$PROJECT_DIR$/ViewReport_Faculty_NTP.php" />
-        <option value="$PROJECT_DIR$/database/dboces .sql" />
-        <option value="$PROJECT_DIR$/ViewReportByParticipant.php" />
-        <option value="$PROJECT_DIR$/ViewReportByInvolvement.php" />
-        <option value="$PROJECT_DIR$/ViewReportByDepartment.php" />
-        <option value="$PROJECT_DIR$/prototypes/GenerateData.php" />
-        <option value="$PROJECT_DIR$/ViewReportByDate.php" />
-        <option value="$PROJECT_DIR$/ApproveReport.php" />
         <option value="$PROJECT_DIR$/partials/viewreport_script.php" />
-        <option value="$PROJECT_DIR$/resources/js/oces.functions-1.0.js" />
+        <option value="$PROJECT_DIR$/config/autoloader.php" />
+        <option value="F:/Downloads/HomePage.php" />
+        <option value="$PROJECT_DIR$/CreateUserAccount.php" />
+        <option value="$PROJECT_DIR$/temp/htdocs/htdocs/HomePage.php" />
+        <option value="$PROJECT_DIR$/UpdateDepartments.php" />
+        <option value="$PROJECT_DIR$/config/DatabaseConnection.php" />
+        <option value="$PROJECT_DIR$/Login.php" />
+        <option value="$PROJECT_DIR$/KeepLogin.php" />
+        <option value="$PROJECT_DIR$/partials/login/RedirectUser.php" />
+        <option value="$PROJECT_DIR$/partials/middleware/RedirectUser.php" />
+        <option value="$PROJECT_DIR$/partials/modal_script.php" />
+        <option value="$PROJECT_DIR$/partials/scripts.php" />
+        <option value="$PROJECT_DIR$/NavigationBar.php" />
+        <option value="$PROJECT_DIR$/partials/cssfiles.php" />
+        <option value="$PROJECT_DIR$/HomePage.php" />
+        <option value="$PROJECT_DIR$/partials/javascriptfiles.php" />
+        <option value="$PROJECT_DIR$/partials/cssmetafiles.php" />
+        <option value="$PROJECT_DIR$/partials/navg.php" />
+        <option value="$PROJECT_DIR$/partials/login/Logout.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/partials/createaccount_script.php" />
+        <option value="$PROJECT_DIR$/partials/CreateAccount.php" />
+        <option value="$PROJECT_DIR$/partials/modals/modal_script.php" />
+        <option value="$PROJECT_DIR$/partials/department/EditDepartment.php" />
+        <option value="$PROJECT_DIR$/partials/department/AddDepartment.php" />
+        <option value="$PROJECT_DIR$/views/UpdateProfile.php" />
+        <option value="$PROJECT_DIR$/views/UpdateUserAccount.php" />
+        <option value="$PROJECT_DIR$/ViewReportByDate.php" />
+        <option value="$PROJECT_DIR$/partials/viewingjsfiles.php" />
+        <option value="$PROJECT_DIR$/partials/middleware/AuthMiddleware.php" />
+        <option value="$PROJECT_DIR$/partials/middleware/RoleMiddleware.php" />
+        <option value="$PROJECT_DIR$/prototypes/test.php" />
+        <option value="$PROJECT_DIR$/partials/middleware/RoleChecker.php" />
+        <option value="$PROJECT_DIR$/middleware/RoleChecker.php" />
+        <option value="$PROJECT_DIR$/partials/login/Login.php" />
+        <option value="$PROJECT_DIR$/partials/login/RedirectIfLoggedIn.php" />
+        <option value="$PROJECT_DIR$/views/ApproveReport.php" />
+        <option value="$PROJECT_DIR$/views/CreateUserAccount.php" />
+        <option value="$PROJECT_DIR$/views/HomePage.php" />
+        <option value="$PROJECT_DIR$/views/UpdateDepartments.php" />
+        <option value="$PROJECT_DIR$/views/ViewReportByDepartment.php" />
+        <option value="$PROJECT_DIR$/views/ViewReportByParticipant.php" />
+        <option value="$PROJECT_DIR$/views/ViewUserRelatedReports.php" />
+        <option value="$PROJECT_DIR$/partials/navigationbar.php" />
+        <option value="$PROJECT_DIR$/views/ViewReportByDate.php" />
+        <option value="$PROJECT_DIR$/views/ViewReportByInvolvement.php" />
+        <option value="$PROJECT_DIR$/middleware/RoleMiddleware.php" />
       </list>
     </option>
   </component>
@@ -163,7 +232,7 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 7" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="width" value="1370" />
+    <option name="width" value="1378" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -184,8 +253,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -208,25 +275,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OCES" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OCES" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -244,32 +293,80 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OCES" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OCES" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OCES" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OCES" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="middleware" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OCES" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OCES" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Major Subjects/6SOFTENG/LSE-HAU-PORTAL" />
+    <property name="last_opened_file_path" value="F:/Downloads/update-11-10-17" />
     <property name="settings.editor.selected.configurable" value="web.server" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Documents\BS in CompSci\OCES\views" />
+      <recent name="F:\Documents\BS in CompSci\OCES\partials\modals" />
+      <recent name="F:\Documents\BS in CompSci\OCES" />
       <recent name="F:\Documents\BS in CompSci\OCES\partials" />
       <recent name="F:\Documents\BS in CompSci\OCES\resources\js" />
-      <recent name="F:\Documents\BS in CompSci\OCES\database\factory" />
-      <recent name="F:\Documents\BS in CompSci\OCES" />
-      <recent name="F:\Documents\BS in CompSci\OCES\database" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Documents\BS in CompSci\OCES\partials" />
-      <recent name="F:\Documents\BS in CompSci\OCES\resources\css" />
-      <recent name="F:\Documents\BS in CompSci\OCES\resources\images" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Documents\BS in CompSci\OCES" />
+      <recent name="F:\Documents\BS in CompSci\OCES\views" />
       <recent name="F:\Documents\BS in CompSci\OCES\temp" />
-      <recent name="F:\Documents\BS in CompSci\OCES\config" />
+      <recent name="F:\Documents\BS in CompSci\OCES\partials\department" />
+      <recent name="F:\Documents\BS in CompSci\OCES\partials" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -284,20 +381,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.ApproveReport.php">
-    <configuration default="false" name="ViewReportByInvolvement.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/OCES/ViewReportByInvolvement.php">
+  <component name="RunManager" selected="JavaScript Debug.index.php">
+    <configuration default="false" name="CreateAccount.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/OCES/CreateAccount.php">
       <method />
     </configuration>
-    <configuration default="false" name="ViewReportByParticipant.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/OCES/ViewReportByParticipant.php">
+    <configuration default="false" name="test.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/OCES/prototypes/test.php">
       <method />
     </configuration>
-    <configuration default="false" name="ViewReportByDate.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/OCES/ViewReportByDate.php">
+    <configuration default="false" name="index.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/OCES/index.php">
       <method />
     </configuration>
-    <configuration default="false" name="ViewReportByDepartment.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/OCES/ViewReportByDepartment.php">
+    <configuration default="false" name="Login.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/OCES/partials/login/Login.php">
       <method />
     </configuration>
-    <configuration default="false" name="ApproveReport.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/OCES/ApproveReport.php">
+    <configuration default="false" name="HomePage.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/OCES/views/HomePage.php">
       <method />
     </configuration>
     <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
@@ -375,19 +472,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="PHP Built-in Web Server.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.ViewReportByInvolvement.php" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.ViewReportByParticipant.php" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.ViewReportByDate.php" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.ViewReportByDepartment.php" />
-      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.ApproveReport.php" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.CreateAccount.php" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.test.php" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.Login.php" />
+      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.HomePage.php" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.ApproveReport.php" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.ViewReportByDate.php" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.ViewReportByDepartment.php" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.ViewReportByInvolvement.php" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.ViewReportByParticipant.php" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.HomePage.php" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.test.php" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.Login.php" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.CreateAccount.php" />
       </list>
     </recent_temporary>
   </component>
@@ -423,12 +520,25 @@
       <workItem from="1509658010440" duration="1071000" />
       <workItem from="1509667467877" duration="2496000" />
       <workItem from="1510068802187" duration="4407000" />
-      <workItem from="1510131093139" duration="1546000" />
+      <workItem from="1510131093139" duration="2100000" />
+      <workItem from="1510151935128" duration="1242000" />
+      <workItem from="1510422106218" duration="1227000" />
+      <workItem from="1510425555793" duration="309000" />
+      <workItem from="1511698108896" duration="658000" />
+      <workItem from="1511699265397" duration="97000" />
+      <workItem from="1511699522297" duration="495000" />
+      <workItem from="1511934399881" duration="418000" />
+      <workItem from="1511934905181" duration="1976000" />
+      <workItem from="1511937243412" duration="1121000" />
+      <workItem from="1512189879893" duration="599000" />
+      <workItem from="1512223525658" duration="11203000" />
+      <workItem from="1512268598730" duration="12931000" />
+      <workItem from="1512296162467" duration="8454000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137135000" />
+    <option name="totallyTimeSpent" value="178419000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -440,22 +550,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1370" height="744" extended-state="0" />
+    <frame x="-8" y="0" width="1378" height="744" extended-state="1" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26183206" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25493172" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934534" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -464,26 +574,26 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24659607" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25493172" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934534" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,224 +603,386 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HP_UniversityAdministrator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="37" column="23" lean-forward="false" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="41" lean-forward="false" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2800">
-          <caret line="344" column="17" lean-forward="true" selection-start-line="344" selection-start-column="17" selection-end-line="344" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CreateReport_OCESStaff_CSCBRep.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="10" selection-end-column="112" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CreateUserAccount.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="129" column="9" lean-forward="true" selection-start-line="129" selection-start-column="9" selection-end-line="129" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/navs/NAV_Faculty_NTP.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="28" column="36" lean-forward="false" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/navs/NAV_OCESAdministrator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/navs/NAV_OCESStaff_CSCBRep.php">
+    <entry file="file://$PROJECT_DIR$/partials/navs/NAV_OCESAdministrator.php" />
+    <entry file="file://$PROJECT_DIR$/partials/navs/NAV_CSCBRep.php" />
+    <entry file="file://$PROJECT_DIR$/partials/navs/NAV_Faculty_NTP.php" />
+    <entry file="file://$PROJECT_DIR$/partials/navigationbar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
-          <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/navs/NAV_SystemAdministrator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/navs/NAV_UniversityAdministrator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="27" column="36" lean-forward="false" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UpdateProfile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="134" column="7" lean-forward="true" selection-start-line="134" selection-start-column="7" selection-end-line="134" selection-end-column="7" />
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UpdateUserAccount.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="128" column="9" lean-forward="true" selection-start-line="128" selection-start-column="9" selection-end-line="128" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ViewReport.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1840">
-          <caret line="92" column="7" lean-forward="true" selection-start-line="92" selection-start-column="7" selection-end-line="92" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ViewReport_OCESAdministrator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="89" column="37" lean-forward="true" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ViewReport_UniversityAdministrator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="114" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CreateReport_OCESAdministrator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="168" column="9" lean-forward="false" selection-start-line="168" selection-start-column="9" selection-end-line="168" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prototypes/jstest.php" />
-    <entry file="file://$PROJECT_DIR$/prototypes/test2.php" />
-    <entry file="file://$PROJECT_DIR$/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prototypes/SampleDBManip.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2020">
-          <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Volunteer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="57" lean-forward="false" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/User.php">
+    <entry file="file://$PROJECT_DIR$/partials/navs/NAV_OCESStaff.php" />
+    <entry file="file://$PROJECT_DIR$/partials/navs/NAV_SystemAdministrator.php" />
+    <entry file="file://$PROJECT_DIR$/partials/navs/NAV_UniversityAdministrator.php" />
+    <entry file="file://$PROJECT_DIR$/config/DatabaseConnection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
-          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/Department.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="20">
+          <caret line="1" column="42" lean-forward="false" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/ViewReportsController.php" />
-    <entry file="file://$PROJECT_DIR$/models/Report.php">
+    <entry file="file://$PROJECT_DIR$/partials/login/Logout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="57" lean-forward="false" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+        <state relative-caret-position="120">
+          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/cssmetafiles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/modals/approvingmodal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/modals/confirmmodal_script.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2240">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1512042554000" expanded="true" signature="1460:1497" ph="..." />
+            <marker date="1512042554000" expanded="true" signature="1498:1675" ph="..." />
+            <marker date="1512042554000" expanded="false" signature="1626:1638" ph="..." />
+            <marker date="1512042554000" expanded="false" signature="1640:1647" ph="×" />
+            <marker date="1512042554000" expanded="false" signature="1699:1737" ph="..." />
+            <marker date="1512042554000" expanded="true" signature="1781:1857" ph="..." />
+            <marker date="1512042554000" expanded="true" signature="2010:2047" ph="..." />
+            <marker date="1512042554000" expanded="true" signature="2048:2231" ph="..." />
+            <marker date="1512042554000" expanded="false" signature="2180:2192" ph="..." />
+            <marker date="1512042554000" expanded="false" signature="2194:2201" ph="×" />
+            <marker date="1512042554000" expanded="false" signature="2257:2295" ph="..." />
+            <marker date="1512042554000" expanded="true" signature="2341:2405" ph="..." />
+            <marker date="1512042554000" expanded="true" signature="2515:2552" ph="..." />
+            <marker date="1512042554000" expanded="true" signature="2553:2740" ph="..." />
+            <marker date="1512042554000" expanded="false" signature="2689:2701" ph="..." />
+            <marker date="1512042554000" expanded="false" signature="2703:2710" ph="×" />
+            <marker date="1512042554000" expanded="false" signature="2766:2804" ph="..." />
+            <marker date="1512042554000" expanded="true" signature="2855:3584" ph="..." />
+            <marker date="1512042554000" expanded="true" signature="3623:3838" ph="..." />
+            <marker date="1512042554000" expanded="true" signature="4277:4446" ph="insert into `tbluser`... " />
+            <marker date="1512042554000" expanded="true" signature="4618:4913" ph="..." />
+            <marker date="1512042554000" expanded="true" signature="4677:4890" ph="{...}" />
+            <marker date="1512042554000" expanded="true" signature="4784:4867" ph="{...}" />
+            <marker date="1512042554000" expanded="true" signature="5039:5186" ph="..." />
+            <marker date="1512042554000" expanded="true" signature="5098:5163" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/CreateNewAccount.php" />
+    <entry file="file://$PROJECT_DIR$/partials/createaccount_script.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="46" column="36" lean-forward="false" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/CreateAccount.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding>
+            <marker date="1512276937103" expanded="true" signature="1138:1272" ph="insert into `tbluser`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CreateReport.php" />
+    <entry file="file://$PROJECT_DIR$/config/autoloader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="2" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/UpdateDepartments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2680">
+          <caret line="137" column="13" lean-forward="true" selection-start-line="137" selection-start-column="13" selection-end-line="137" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/javascriptfiles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/modals/modal_script.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1426">
+          <caret line="150" column="60" lean-forward="false" selection-start-line="150" selection-start-column="60" selection-end-line="150" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/department/AddDepartment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="29" column="43" lean-forward="false" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+          <folding>
+            <marker date="1512299736352" expanded="true" signature="119:166" ph="insert into `tbldepartment`... " />
+            <marker date="1512299736352" expanded="true" signature="367:716" ph="..." />
+            <marker date="1512299736352" expanded="true" signature="430:675" ph="{...}" />
+            <marker date="1512299736352" expanded="true" signature="564:650" ph="{...}" />
+            <marker date="1512299736352" expanded="true" signature="865:1025" ph="..." />
+            <marker date="1512299736352" expanded="true" signature="928:1000" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/department/EditDepartment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="30" column="43" lean-forward="false" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+          <folding>
+            <marker date="1512299727806" expanded="true" signature="123:205" ph="update `tbld... " />
+            <marker date="1512299727806" expanded="true" signature="415:784" ph="..." />
+            <marker date="1512299727806" expanded="true" signature="478:742" ph="{...}" />
+            <marker date="1512299727806" expanded="true" signature="613:699" ph="{...}" />
+            <marker date="1512299727806" expanded="true" signature="933:1094" ph="..." />
+            <marker date="1512299727806" expanded="true" signature="996:1069" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/UpdateProfile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-900">
+          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/UpdateUserAccount.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3140">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1512301096927" expanded="true" signature="2143:2191" ph="SELECT * FRO... tbluser" />
+            <marker date="1512301096927" expanded="true" signature="3657:3716" ph="SELECT `Firs... tbluser" />
+            <marker date="1512301096927" expanded="true" signature="4227:4287" ph="SELECT `Midd... tbluser" />
+            <marker date="1512301096927" expanded="true" signature="4786:4844" ph="SELECT `Last... tbluser" />
+            <marker date="1512301096927" expanded="true" signature="5384:5441" ph="SELECT `User... tbluser" />
+            <marker date="1512301096927" expanded="true" signature="6112:6169" ph="SELECT `Pass... tbluser" />
+            <marker date="1512301096927" expanded="true" signature="8327:8354" ph="SELECT * FRO... tbldepartment" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/viewreport_script.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="88" column="14" lean-forward="true" selection-start-line="88" selection-start-column="14" selection-end-line="88" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/viewingjsfiles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="84" lean-forward="false" selection-start-line="1" selection-start-column="84" selection-end-line="1" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ViewReports.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-660">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/middleware/RedirectUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/prototypes/test.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middleware/RoleChecker.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/login_script.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/login/RememberMe.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/login/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-146">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <marker date="1512305488939" expanded="true" signature="394:457" ph="SELECT * FRO... tbluser" />
+            <marker date="1512305488939" expanded="true" signature="1027:1188" ph="..." />
+            <marker date="1512305488939" expanded="true" signature="1090:1163" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/login/RedirectIfLoggedIn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/ApproveReport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/CreateUserAccount.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding>
+            <marker date="1512306209884" expanded="true" signature="5092:5119" ph="SELECT * FRO... tbldepartment" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/HomePage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding>
+            <marker date="1512306214330" expanded="true" signature="152:279" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/UpdateDepartments.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <marker date="1512306386428" expanded="true" signature="779:956" ph="..." />
+            <marker date="1512306386428" expanded="true" signature="850:927" ph="{...}" />
+            <marker date="1512306386428" expanded="true" signature="1127:1302" ph="..." />
+            <marker date="1512306386428" expanded="true" signature="1198:1273" ph="{...}" />
+            <marker date="1512306386428" expanded="true" signature="1594:1772" ph="..." />
+            <marker date="1512306386428" expanded="true" signature="1665:1743" ph="{...}" />
+            <marker date="1512306386428" expanded="true" signature="1944:2120" ph="..." />
+            <marker date="1512306386428" expanded="true" signature="2015:2091" ph="{...}" />
+            <marker date="1512306386428" expanded="true" signature="3857:3884" ph="select * fro... tbldepartment" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/autoloader.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="220">
+          <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
+    <entry file="file://$PROJECT_DIR$/views/ViewReportByDate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="864" column="0" lean-forward="false" selection-start-line="864" selection-start-column="0" selection-end-line="864" selection-end-column="0" />
+        <state relative-caret-position="220">
+          <caret line="11" column="45" lean-forward="false" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
+    <entry file="file://$PROJECT_DIR$/views/ViewReportByDepartment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
+        <state relative-caret-position="40">
+          <caret line="2" column="52" lean-forward="false" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Approver.php" />
-    <entry file="file://$PROJECT_DIR$/test.php" />
-    <entry file="file://$PROJECT_DIR$/CreateReport.php">
+    <entry file="file://$PROJECT_DIR$/views/ViewReportByParticipant.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="167" column="0" lean-forward="true" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
+        <state relative-caret-position="140">
+          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/oces.functions-1.0.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1831">
+          <caret line="89" column="9" lean-forward="false" selection-start-line="89" selection-start-column="9" selection-end-line="89" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -719,121 +991,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ViewReport_Faculty_NTP.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="37" column="29" lean-forward="false" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/asfas.txt" />
-    <entry file="file://$PROJECT_DIR$/database/dboces .sql">
+    <entry file="file://$PROJECT_DIR$/views/ViewReportByInvolvement.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-200">
-          <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/date_script.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-286">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ViewReports.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="114" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="114" />
+        <state relative-caret-position="300">
+          <caret line="59" column="52" lean-forward="false" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/partials/scripts.php">
+    <entry file="file://$PROJECT_DIR$/middleware/RoleMiddleware.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="400">
+          <caret line="20" column="47" lean-forward="false" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+          <folding>
+            <element signature="n#getLoggedInUserRole#0;n#RoleMiddleware#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/factory/PopulateDB.php">
+    <entry file="file://$PROJECT_DIR$/partials/navigationbar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prototypes/GenerateData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ViewReportByParticipant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="140">
+          <caret line="49" column="78" lean-forward="true" selection-start-line="49" selection-start-column="78" selection-end-line="49" selection-end-column="78" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ViewReportByDate.php">
+    <entry file="file://$PROJECT_DIR$/views/ViewUserRelatedReports.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1660">
-          <caret line="83" column="7" lean-forward="true" selection-start-line="83" selection-start-column="7" selection-end-line="83" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ViewReportByInvolvement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ViewReportByDepartment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="38" column="25" lean-forward="false" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/samplemodal_script.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApproveReport.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="43" column="16" lean-forward="true" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/viewreport_script.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="73" column="37" lean-forward="true" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/oces.functions-1.0.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="130" column="105" lean-forward="false" selection-start-line="130" selection-start-column="105" selection-end-line="130" selection-end-column="105" />
+        <state relative-caret-position="340">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding />
         </state>
       </provider>

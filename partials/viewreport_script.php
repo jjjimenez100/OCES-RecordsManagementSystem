@@ -1,11 +1,12 @@
 <?php
     //require dirname(__FILE__).'/../../config/autoloader.php';
+    $FILE_STORAGE_DIRECTORY = dirname(__FILE__).'/../storage';
     $reports = "";
     if(isset($approving)){
         $reports = Report::where('Remarks', 0)->get();
     }
     else if(isset($individualViewing)){
-        $userLoggedIn = 25570373; //paltan to if okay na yung login pati auth
+        $userLoggedIn = $_SESSION['username'];
         $reports = Report::where('UserID', $userLoggedIn)->get();
     }
     else{
@@ -69,8 +70,11 @@
                                 </td>
                             <?php else: ?>
                                 <td data-title="Files" data-id="<?php echo $report->Activity_Code; ?>">
-                                    <button class="btn btn-dark"><i class="fa fa-file-excel-o" aria-hidden="true"></i> .xlsx</button>
-                                    <button class="btn btn-dark"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</button>
+                                    <!-- papaltan pa to -->
+                                    <a class="btn btn-dark" href="<?php echo $FILE_STORAGE_DIRECTORY.$report->File_Activity?>" download><i class="fa fa-file-excel-o" aria-hidden="true"></i> .xlsx</a>
+                                    <a class="btn btn-dark" href="<?php echo $FILE_STORAGE_DIRECTORY.$report->File_Activity?>" download><i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</a>
+                                    <!--<button class="btn btn-dark"><i class="fa fa-file-excel-o" aria-hidden="true"></i> .xlsx</button>
+                                    <button class="btn btn-dark"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</button>-->
                                 </td>
                             <?php endif; ?>
                             <td class="d-none"><?php echo $report->user->Department; ?></td>
