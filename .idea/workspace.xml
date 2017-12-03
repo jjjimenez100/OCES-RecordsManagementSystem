@@ -2,117 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="562af073-ce0e-40b8-9ff1-5fa91737b76c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/module_table_bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/module_table_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/DatabaseConnection.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/middleware/RoleMiddleware.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/CreateAccount.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/createaccount_script.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/cssmetafiles.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/department/AddDepartment.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/department/EditDepartment.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/disablekeys_script.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/javascriptfiles.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/login/Login.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/login/Logout.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/login/RedirectIfLoggedIn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/login/RememberMe.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/login_script.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/modals/confirmmodal_script.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/modals/modal_script.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/navigationbar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/viewingjsfiles.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/bootstrap-grid.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/bootstrap-grid.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/bootstrap-grid.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/bootstrap-grid.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/bootstrap-reboot.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/bootstrap-reboot.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/bootstrap-reboot.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/bootstrap-reboot.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/bootstrap.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/HELP-US-OUT.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/less/animated.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/less/bordered-pulled.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/less/core.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/less/fixed-width.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/less/font-awesome.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/less/icons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/less/larger.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/less/list.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/less/path.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/less/rotated-flipped.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/less/screen-reader.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/less/stacked.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/less/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/scss/_animated.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/scss/_bordered-pulled.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/scss/_core.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/scss/_fixed-width.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/scss/_icons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/scss/_larger.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/scss/_list.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/scss/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/scss/_path.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/scss/_rotated-flipped.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/scss/_screen-reader.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/scss/_stacked.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/scss/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome-4.7.0/scss/font-awesome.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/js/jquery-3.2.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp/UpdateUserAccount.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/CreateUserAccount.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/UpdateDepartments.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CreateReport.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CreateReport_OCESAdministrator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CreateReport_OCESStaff_CSCBRep.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CreateUserAccount.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HP_OCESAdministrator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HP_OCESStaff_CSCBRep.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HP_SystemAdministrator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HP_UniversityAdministrator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/UpdateUserAccount.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ViewReport.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ViewReport_OCESAdministrator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ViewReport_UniversityAdministrator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ViewReports.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/partials/header.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/partials/navs/NAV_Faculty_NTP.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/partials/navs/NAV_OCESAdministrator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/partials/navs/NAV_OCESStaff_CSCBRep.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/partials/navs/NAV_SystemAdministrator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/partials/navs/NAV_UniversityAdministrator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/partials/scripts.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/partials/stylesheets.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/autoloader.php" afterPath="$PROJECT_DIR$/config/autoloader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/date_script.php" afterPath="$PROJECT_DIR$/partials/date_script.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/participation_script.php" afterPath="$PROJECT_DIR$/partials/participation_script.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/viewreport_script.php" afterPath="$PROJECT_DIR$/partials/viewreport_script.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prototypes/test.php" afterPath="$PROJECT_DIR$/prototypes/test.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/styles.css" afterPath="$PROJECT_DIR$/resources/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/styles2.css" afterPath="$PROJECT_DIR$/resources/css/styles2.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ApproveReport.php" afterPath="$PROJECT_DIR$/views/ApproveReport.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/HP_Faculty_NTP.php" afterPath="$PROJECT_DIR$/views/HomePage.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/UpdateProfile.php" afterPath="$PROJECT_DIR$/temp/UpdateProfile.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ViewReportByDate.php" afterPath="$PROJECT_DIR$/views/ViewReportByDate.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ViewReportByDepartment.php" afterPath="$PROJECT_DIR$/views/ViewReportByDepartment.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ViewReportByInvolvement.php" afterPath="$PROJECT_DIR$/views/ViewReportByInvolvement.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ViewReportByParticipant.php" afterPath="$PROJECT_DIR$/views/ViewReportByParticipant.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ViewReport_Faculty_NTP.php" afterPath="$PROJECT_DIR$/views/ViewUserRelatedReports.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/partials/samplemodal_script.php" afterPath="$PROJECT_DIR$/partials/modals/approvingmodal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/login/Login.php" afterPath="$PROJECT_DIR$/partials/login/Login.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -135,7 +25,22 @@
     <favorites_list name="OCES" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Login.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/partials/login/Login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+              <folding>
+                <marker date="1512307602580" expanded="true" signature="394:457" ph="SELECT * FRO... tbluser" />
+                <marker date="1512307602580" expanded="true" signature="1220:1381" ph="..." />
+                <marker date="1512307602580" expanded="true" signature="1283:1356" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -196,7 +101,6 @@
         <option value="$PROJECT_DIR$/prototypes/test.php" />
         <option value="$PROJECT_DIR$/partials/middleware/RoleChecker.php" />
         <option value="$PROJECT_DIR$/middleware/RoleChecker.php" />
-        <option value="$PROJECT_DIR$/partials/login/Login.php" />
         <option value="$PROJECT_DIR$/partials/login/RedirectIfLoggedIn.php" />
         <option value="$PROJECT_DIR$/views/ApproveReport.php" />
         <option value="$PROJECT_DIR$/views/CreateUserAccount.php" />
@@ -209,6 +113,7 @@
         <option value="$PROJECT_DIR$/views/ViewReportByDate.php" />
         <option value="$PROJECT_DIR$/views/ViewReportByInvolvement.php" />
         <option value="$PROJECT_DIR$/middleware/RoleMiddleware.php" />
+        <option value="$PROJECT_DIR$/partials/login/Login.php" />
       </list>
     </option>
   </component>
@@ -533,12 +438,12 @@
       <workItem from="1512189879893" duration="599000" />
       <workItem from="1512223525658" duration="11203000" />
       <workItem from="1512268598730" duration="12931000" />
-      <workItem from="1512296162467" duration="8454000" />
+      <workItem from="1512296162467" duration="8956000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178419000" />
+    <option name="totallyTimeSpent" value="178921000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -550,9 +455,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1378" height="744" extended-state="1" />
+    <frame x="-8" y="0" width="1378" height="744" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25493172" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25493172" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -881,18 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/partials/login/Login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-146">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <marker date="1512305488939" expanded="true" signature="394:457" ph="SELECT * FRO... tbluser" />
-            <marker date="1512305488939" expanded="true" signature="1027:1188" ph="..." />
-            <marker date="1512305488939" expanded="true" signature="1090:1163" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/partials/login/RedirectIfLoggedIn.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1026,6 +920,18 @@
         <state relative-caret-position="340">
           <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/login/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding>
+            <marker date="1512307602580" expanded="true" signature="394:457" ph="SELECT * FRO... tbluser" />
+            <marker date="1512307602580" expanded="true" signature="1220:1381" ph="..." />
+            <marker date="1512307602580" expanded="true" signature="1283:1356" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
