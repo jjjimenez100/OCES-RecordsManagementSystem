@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Department' => $baseDir . '/models/Department.php',
+    'FPDF' => $vendorDir . '/setasign/fpdf/fpdf.php',
     'Report' => $baseDir . '/models/Report.php',
     'User' => $baseDir . '/models/User.php',
     'Volunteer' => $baseDir . '/models/Volunteer.php',

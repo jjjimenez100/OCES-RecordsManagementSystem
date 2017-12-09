@@ -4,6 +4,7 @@
   require dirname(__FILE__).'/../../config/DatabaseConnection.php';
   require 'RedirectIfLoggedIn.php';
 
+  $HAU_EMAIL = "@hau.edu.ph" ;
   if(isset($_POST['login']))
   {
       //12/2/17 10:25 updated mysql -> to mysqli ;

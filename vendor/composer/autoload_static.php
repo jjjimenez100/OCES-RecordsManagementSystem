@@ -89,6 +89,7 @@ class ComposerStaticInitc5025487431f9c79d54a051ccecfe62b
 
     public static $classMap = array (
         'Department' => __DIR__ . '/../..' . '/models/Department.php',
+        'FPDF' => __DIR__ . '/..' . '/setasign/fpdf/fpdf.php',
         'Report' => __DIR__ . '/../..' . '/models/Report.php',
         'User' => __DIR__ . '/../..' . '/models/User.php',
         'Volunteer' => __DIR__ . '/../..' . '/models/Volunteer.php',
