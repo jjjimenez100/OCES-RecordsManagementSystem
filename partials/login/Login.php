@@ -18,10 +18,13 @@
     $userdata = $result->fetch_array(MYSQLI_ASSOC);
     $_SESSION['username'] = $username;
 
-    if($userdata['Username'] == $username && $userdata['Password'] == hash("sha256", $password))
+      if($userdata['Username'] == $username && $userdata['Password'] == $password)
+    //if($userdata['Username'] == $username && $userdata['Password'] == hash("sha256", $password))
     {     
       require 'RememberMe.php';
-      $_SESSION['navbar'] = $userdata['Position_Level'];
+        $_SESSION['navbar'] = $userdata['Position_Level'];
+        $_SESSION['fullname'] = $userdata['First_Name'] .' '. $userdata['Middle_Name'] .' '. $userdata['Last_Name'];
+        $_SESSION['userid'] = $userdata['UserID'];
       header("Location: views/HomePage.php");
     }      
 

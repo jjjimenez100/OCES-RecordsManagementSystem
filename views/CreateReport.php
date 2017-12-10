@@ -8,10 +8,12 @@
 <html lang="en">
   <head>
     <title>Create Report - OCES</title>
+      <link type="text/css" rel="stylesheet" href="../resources/css/styles2.css">
       <?php
         require '../partials/cssmetafiles.php' ;
+        require '../partials/javascriptfiles.php' ;
       ?>
-    <link type="text/css" rel="stylesheet" href="../resources/css/styles2.css">
+    <script type="text/javascript" src="CreateReportAPI/create-report.js"></script>
   </head>
 
   <body>
@@ -193,7 +195,7 @@
             </div>
             <label class="col-sm-2 col-form-label">Amount</label>
             <div class="col-sm-10 form-group row">
-              <div class="col-sm-9"><input name="financeAmount" type="text" class="form-control" placeholder="amount"></div>
+              <div class="col-sm-9"><input name="financeAmount" type="number" class="form-control" placeholder="amount"></div>
             </div>
           </div> 
           <div class="form-group row">
@@ -220,23 +222,40 @@
             </table>
           </div>             
       <hr style="border: 1px solid #CFB53B"><br>
-	  <div class="form-group row">
-            <label class="col-sm-2 col-form-label">FILE NAME</label>
-            <div class="col-sm-10">
-              <input name="fileName" type="text" class="form-control" placeholder="file name">
-            </div>
-          </div>
+	<div class="form-group row">
+		  <div class="col-sm-4">
+                <select class="selectpicker btn_info" id="department" name="department" style="height: 37px; max-width: 355px">
+                  <option selected disabled>Select Department</option>
+				  <?php
+					//session_start();
+					require '../config/DatabaseConnection.php' ;
+					$stmt = $connect->prepare("SELECT * FROM tbldepartment");
+					$stmt->execute();
+					$result = $stmt->get_result();
+					while($row = $result->fetch_array(MYSQLI_ASSOC))
+					{
+						?>
+						<option><?php echo $row['Department']; ?></option>
+						<?php
+					}
+				  ?>
+                </select>                
+           </div>
+		   <div class="col-sm-5">
+                <select class="selectpicker btn_info" id="courses" name="courses" style="height: 37px; max-width: 355px">
+                  <option selected disabled>Select Courses</option>
+                </select>                
+              </div>
+	</div>
 	  <div id="alert"></div>
       <center><button name="generateReport" type="submit" class="btn" id="btn_create">GENERATE REPORT</button></center>
-  </div>
+  </div>        
 
   </body>
   
   <!-- JAVASCRIPT -->
   <?php
-      require '../partials/javascriptfiles.php';
       require '../partials/date_script.php';
       require '../partials/participation_script.php';
-  ?>
-    <script type="text/javascript" src="../resources/js/create-report-functions.js"></script>
+  ?> 
 </html>
