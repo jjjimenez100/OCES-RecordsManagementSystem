@@ -1,12 +1,12 @@
 <?php
 require '../middleware/RoleMiddleware.php';
 require '../config/autoloader.php' ;
-if($roleChecker->hasUpdateProfileAccess() == false){
+if($roleChecker->hasUpdateUserAccountAccess() == false){
     $roleChecker->redirectUser();
 }
 
 require '../config/DatabaseConnection.php';
-
+$flag = false;
 if(isset($_POST['updateProfile'])) {
     $username = $_SESSION['selectedUsername'];
     if(isset($_POST['first_name']))
@@ -34,6 +34,7 @@ if(isset($_POST['updateProfile'])) {
             echo '<script language="javascript">';
             echo 'alert("Password does not match.")';
             echo '</script>';
+            $flag = true;
         }
         else
         {
@@ -66,7 +67,6 @@ if(isset($_POST['updateProfile'])) {
             $username = $_SESSION['username'];
         }
     }
-    $flag = false;
     if(isset($_POST['month']) && isset($_POST['year']) && isset($_POST['day']))
     {
         $year = $_POST['year'];

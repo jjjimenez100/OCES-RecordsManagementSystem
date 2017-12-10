@@ -18,9 +18,7 @@
     $userdata = $result->fetch_array(MYSQLI_ASSOC);
     $_SESSION['username'] = $username;
 
-    //pa create ng isang sys ad na account, tapos uncomment nalang to para dun sa pang hash
-      //if($userdata['Username'] == $username && $userdata['Password'] == hash("sha256", $password))
-    if($userdata['Username'] == $username && $userdata['Password'] == $password)
+    if($userdata['Username'] == $username && $userdata['Password'] == hash("sha256", $password))
     {     
       require 'RememberMe.php';
       $_SESSION['navbar'] = $userdata['Position_Level'];

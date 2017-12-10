@@ -36,7 +36,7 @@
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">EMPLOYEE ID</label>
             <div class="col-sm-10">
-              <input name="empID" id="empID" type="number" class="form-control" placeholder="employee id" required>               
+              <input name="empID" id="empID" type="text" class="form-control" placeholder="employee id" required>               
             </div>
           </div>
           <div class="form-group row">

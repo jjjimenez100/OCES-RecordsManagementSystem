@@ -18,7 +18,6 @@ class RoleMiddleware{
             $this->viewReportByDepartment = true;
             $this->viewReportByParticipant = true;
             $this->viewReportByInvolvement = true;
-            $this->viewIndividualReport = true;
             $this->createReport = true;
             $this->approveReport = true;
             $this->updateProfile = true;
@@ -32,17 +31,12 @@ class RoleMiddleware{
             $this->viewReportByInvolvement = true;
             $this->createReport = true;
             $this->approveReport = true;
+            $this->updateProfile = true;
         }
 
-        else if($userRole == "OCES Staff"){
-            $this->createReport = true;
-        }
-
-        else if($userRole == "CSCB Representative"){
+        else if($userRole == "OCES Staff" || $userRole == "CSCB Representative"){
             $this->createReport = true;
             $this->updateProfile = true;
-            $this->viewReportByDate = true;
-            $this->viewReportByInvolvement = true;
         }
 
         else if($userRole == "University Administrator"){

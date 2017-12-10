@@ -46,19 +46,47 @@
             type: 'POST',
             url: '../partials/CreateAccount.php',
             data: $('form').serialize(),
-            success: function() 
+            dataType: 'json',
+            success: function(data) 
             {
-              $('#myModal').modal('hide');
-              $('#modalSuccess').modal('show');
+              $('#myModal').modal('hide');  
 
-              setTimeout(function()
+              if(data.status == 'success')
+              {                                
+                $('#modalSuccess').modal('show');
+
+                setTimeout(function()
+                {
+                  window.location.href = window.location.href;
+                },2000)
+              }
+              else if(data.status == 'error')
               {
-                window.location.href = window.location.href;
-              },2000)
+                $('#errorSignUp').text('Unsuccessful sign-up.');
+                $('#modalError').modal('show');
+
+                $('.btn_proceed').unbind('click');
+              }
+
+              data.status = '';                           
             },
-            error: function()
+            error: function(x, y)
             {
               $('#myModal').modal('hide');
+
+              if (x.status == 0) 
+                $('#errorSignUp').text('There is a problem with your network.');
+              else if(x.status == 404)
+                $('#errorSignUp').text('Requested URL not found.');
+              else if(x.status == 500) 
+                $('#errorSignUp').text('Internel server error.');
+              else if(y == 'parsererror')
+                $('#errorSignUp').text('Parsing JSON request failed.');
+              else if(y == 'timeout')
+                $('#errorSignUp').text('Request time out.');
+              else
+                $('#errorSignUp').text('Unknown error.');              
+
               $('#modalError').modal('show');
             }
           });

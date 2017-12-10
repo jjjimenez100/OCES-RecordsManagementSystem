@@ -69,7 +69,7 @@
       </div>
       <div style="background-color: #CFB53B; height: 5px"></div>  
       <div class="modal-body">
-        <p>Unsuccessful sign-up.</p>
+          <span id="errorSignup"></span>
       </div>
     </div>
   </div>
@@ -87,7 +87,7 @@
       <div class="modal-body">
         <p>Do you want to proceed with creating this account?</p>
         <p><b>Employee No.:</b> <span id="empid"></span></p>
-        <p><b>Name:</b> <span id="first"></span> <span id="middle"></span> <span id="last"></span></p>
+        <p><b>Name:</b> <span id="first" style="text-transform: capitalize;"></span> <span id="middle" style="text-transform: capitalize;"></span> <span id="last" style="text-transform: capitalize;"></span></p>
         <p><b>Email:</b> <span id="user"></span>@hau.edu.ph</p>
         <p><b>Password:</b> <span id="pass"></span></p>
         <p><b>Account Type:</b> <span id="acctype"></span></p>

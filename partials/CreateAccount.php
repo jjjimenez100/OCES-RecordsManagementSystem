@@ -1,5 +1,5 @@
 <?php
-  require '../config/DatabaseConnection.php';
+  require '../config/DatabaseConnection.php';  
 
   $empID = mysqli_real_escape_string($connect, $_POST['empID']); //wala bang limit yung empID
   $fname = mysqli_real_escape_string($connect, $_POST['fname']);
@@ -27,10 +27,20 @@
   $fname = ucwords(strtolower($fname));
   $mname = ucwords(strtolower($mname));
   $lname = ucwords(strtolower($lname));
-
-  //dinagdag ko lang pang hash
+ 
   $password = hash("sha256", $password);
   $sql= "insert into `tbluser` values ('$empID','$fname','$mname','$lname','$year-$month-$day', '$poslevel', '$dept', '$username', '$password')";
 
-  $result = mysqli_query($connect, $sql);   
+  $result = mysqli_query($connect, $sql);    
+
+  if($result)
+  {
+    $response['status'] = 'success';  
+  }
+  else 
+  {
+    $response['status'] = 'error';  
+  }
+  header('Content-type: application/json');
+  echo json_encode($response);
 ?>

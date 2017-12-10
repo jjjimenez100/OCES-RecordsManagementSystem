@@ -6,7 +6,7 @@
     }
 
     require '../config/DatabaseConnection.php';
-	
+	$flag = false;
 	if(isset($_POST['updateProfile'])) {
 	    $username = $_SESSION['username'];
 			if(isset($_POST['first_name']))
@@ -14,36 +14,18 @@
 				$fname = $_POST['first_name'];
 				$updateQuery = $connect->query("UPDATE tbluser SET `First_Name` = '$fname' WHERE `Username` = '$username'");
 			}
-
-            else{
-                echo '<script language="javascript">';
-                echo 'alert("Fill up your First Name.")';
-                echo '</script>';
-            }
 		
 			if(isset($_POST['middle_name']))
 			{
 				$mname = $_POST['middle_name'];
 				$updateQuery = $connect->query("UPDATE tbluser SET `Middle_Name` = '$mname' WHERE `Username` = '$username'");
 			}
-
-            else{
-                echo '<script language="javascript">';
-                echo 'alert("Fill up your Middle Name.")';
-                echo '</script>';
-            }
 			
 			if(isset($_POST['last_name']))
 			{
 				$lname = $_POST['last_name'];
 				$updateQuery = $connect->query("UPDATE tbluser SET `Last_Name` = '$lname' WHERE `Username` = '$username'");
 			}
-
-            else{
-                echo '<script language="javascript">';
-                echo 'alert("Fill up your Last Name.")';
-                echo '</script>';
-            }
 			
 			if(isset($_POST['password']))
 				{
@@ -52,6 +34,7 @@
 						echo '<script language="javascript">';
 						echo 'alert("Password does not match.")';
 						echo '</script>';
+						$flag = true;
 					}
 					else
 					{
@@ -59,34 +42,19 @@
 						$updateQuery = $connect->query("UPDATE tbluser SET `Password` = '$password' WHERE `Username` = '$username'");
 					}
 				}
-            else{
-                echo '<script language="javascript">';
-                echo 'alert("Fill up your password.")';
-                echo '</script>';
-            }
 				
 			if(isset($_POST['department']))
 			{
 				$dept = $_POST['department'];
 				$updateQuery = $connect->query("UPDATE tbluser SET `Department` = '$dept' WHERE `Username` = '$username'");
 			}
-            else{
-                echo '<script language="javascript">';
-                echo 'alert("Fill up your Department.")';
-                echo '</script>';
-            }
 			
-			if(isset($_POST['accountType']))
+			/*if(isset($_POST['accountType']))
 			{
 				$accType = $_POST['accountType'];
 				$updateQuery = $connect->query("UPDATE tbluser SET `Position_Level` = '$accType' WHERE `Username` = '$username'");
                 $_SESSION['navbar'] = $accType ;
-			}
-            else{
-                echo '<script language="javascript">';
-                echo 'alert("Fill up your Account Type.")';
-                echo '</script>';
-            }
+			}*/
 			
 			if(isset($_POST['email']))
 			{
@@ -95,11 +63,6 @@
 				$_SESSION['username'] = $mail;
 				$username = $_SESSION['username'];
 			}
-            else{
-                echo '<script language="javascript">';
-                echo 'alert("Fill up your email.")';
-                echo '</script>';
-            }
 			
 			if(isset($_POST['month']) && isset($_POST['year']) && isset($_POST['day']))
 			{
@@ -121,9 +84,11 @@
 						echo 'alert("Choose a valid date.")';
 						echo '</script>';
 				}
-                        echo '<script language="javascript">';
-                        echo 'alert("Updated your user account.")';
-                        echo '</script>';
+        if(!$flag){
+            echo '<script language="javascript">';
+            echo 'alert("Updated your user account.")';
+            echo '</script>';
+        }
 			}
 ?>
 
@@ -159,28 +124,28 @@
            <div class="form-group row">
             <label class="col-sm-2 col-form-label">FIRST NAME</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" name = "first_name" placeholder="first name" value ="<?php echo $loggedInUser->First_Name ?>">
+              <input type="text" class="form-control" name = "first_name" placeholder="first name" value ="<?php echo $loggedInUser->First_Name ?>" required>
             </div>
           </div>
 
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">MIDDLE NAME</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" name = "middle_name" placeholder="middle name" value="<?php echo $loggedInUser->Middle_Name ?>">
+              <input type="text" class="form-control" name = "middle_name" placeholder="middle name" value="<?php echo $loggedInUser->Middle_Name ?>" required>
             </div>
           </div>
 
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">LAST NAME</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" name = "last_name" placeholder="last name" value="<?php echo $loggedInUser->Last_Name?>">
+              <input type="text" class="form-control" name = "last_name" placeholder="last name" value="<?php echo $loggedInUser->Last_Name?>" required>
             </div>
           </div>
 
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">HAU EMAIL</label>
             <div class="col-sm-10 form-group row">
-              <div class="col-sm-6"><input type="text" class="form-control" name = "email" placeholder="hau username" value="<?php echo $loggedInUser->Username ?>">
+              <div class="col-sm-6"><input type="text" class="form-control" name = "email" placeholder="hau username" value="<?php echo $loggedInUser->Username ?>" required>
 			</div>
               <div class="col-sm-6"><input type="text" class="form-control" name = "address" placeholder="@hau.edu.ph" value ="@hau.edu.ph" readonly></div>
             </div>
@@ -189,48 +154,48 @@
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">PASSWORD</label>
             <div class="col-sm-10">
-              <input type="password" class="form-control" name = "password" placeholder="password" value ="<?php echo $loggedInUser->Password ?>">
+              <input type="password" class="form-control" name = "password" placeholder="password" value ="<?php echo $loggedInUser->Password ?>" required>
             </div>
           </div>
 
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">RE-TYPE PASSWORD</label>
             <div class="col-sm-10">
-              <input type="password" class="form-control" name = "retypePassword" placeholder="re-type password" value ="<?php echo $loggedInUser->Password ?>">
+              <input type="password" class="form-control" name = "retypePassword" placeholder="re-type password" value ="<?php echo $loggedInUser->Password ?>" required>
             </div>
           </div>
 
-          <div class="form-group row">
+          <!--<div class="form-group row">
             <label class="col-sm-2 col-form-label">ACCOUNT TYPE</label>
             <div class="col-sm-10">
               <div>
-                  <select class="selectpicker"  id="btn_info" name = "accountType" style="height: 37px">
+                  <select class="selectpicker"  id="btn_info" name = "accountType" style="height: 37px" required>
 
-                    <option value ="System Administrator" <?php if($loggedInUser->Position_Level == "System Administrator") echo "selected"?>> System Administrator</option>
-                    <option value ="OCES Administrator" <?php if($loggedInUser->Position_Level == "OCES Administrator") echo "selected"?>>OCES Administrator</option>
-                    <option value ="OCES Staff" <?php if($loggedInUser->Position_Level == "OCES Staff") echo "selected"?>>OCES Staff</option>
-                    <option value ="CSCB Representative" <?php if($loggedInUser->Position_Level == "CSCB Representative") echo "selected"?>>CSCB Representative</option>
-                    <option value ="University Administrator" <?php if($loggedInUser->Position_Level == "University Administrator") echo "selected"?>>University Administrator</option>
+                    <option value ="System Administrator" <?php /*if($loggedInUser->Position_Level == "System Administrator") echo "selected"*/?>> System Administrator</option>
+                    <option value ="OCES Administrator" <?php /*if($loggedInUser->Position_Level == "OCES Administrator") echo "selected"*/?>>OCES Administrator</option>
+                    <option value ="OCES Staff" <?php /*if($loggedInUser->Position_Level == "OCES Staff") echo "selected"*/?>>OCES Staff</option>
+                    <option value ="CSCB Representative" <?php /*if($loggedInUser->Position_Level == "CSCB Representative") echo "selected"*/?>>CSCB Representative</option>
+                    <option value ="University Administrator" <?php /*if($loggedInUser->Position_Level == "University Administrator") echo "selected"*/?>>University Administrator</option>
                     <optgroup label="Faculty">
-                      <option value ="Full-Time Faculty" <?php if($loggedInUser->Position_Level == "Full-Time Faculty") echo "selected"?>>Full-Time Faculty</option>
-                      <option value ="Part-Time Faculty" <?php if($loggedInUser->Position_Level == "Part-Time Faculty") echo "selected"?>>Part-Time Faculty</option>
+                      <option value ="Full-Time Faculty" <?php /*if($loggedInUser->Position_Level == "Full-Time Faculty") echo "selected"*/?>>Full-Time Faculty</option>
+                      <option value ="Part-Time Faculty" <?php /*if($loggedInUser->Position_Level == "Part-Time Faculty") echo "selected"*/?>>Part-Time Faculty</option>
                     </optgroup>
                     <optgroup label="Non-Teaching Personnel">
-                      <option value ="Technical Support Services" <?php if($loggedInUser->Position_Level == "Technical Support Services") echo "selected"?>>Technical Support Services</option>
-                      <option value ="Academic Support Services" <?php if($loggedInUser->Position_Level == "Academic Support Services") echo "selected"?>>Academic Support Services</option>
-                      <option value ="Office Personnel" <?php if($loggedInUser->Position_Level == "Office Personnel") echo "selected"?>>Office Personnel</option>
-                      <option value ="Field Personnel" <?php if($loggedInUser->Position_Level == "Field Personnel") echo "selected"?>>Field Personnel</option>
+                      <option value ="Technical Support Services" <?php /*if($loggedInUser->Position_Level == "Technical Support Services") echo "selected"*/?>>Technical Support Services</option>
+                      <option value ="Academic Support Services" <?php /*if($loggedInUser->Position_Level == "Academic Support Services") echo "selected"*/?>>Academic Support Services</option>
+                      <option value ="Office Personnel" <?php /*if($loggedInUser->Position_Level == "Office Personnel") echo "selected"*/?>>Office Personnel</option>
+                      <option value ="Field Personnel" <?php /*if($loggedInUser->Position_Level == "Field Personnel") echo "selected"*/?>>Field Personnel</option>
                     </optgroup>
                   </select>
                 </div>
             </div>
-          </div>
+          </div>-->
 
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">DEPARTMENT</label>
             <div class="col-sm-10">
               <div>
-                    <select class="selectpicker" id="btn_info" style="height: 37.5px; padding-bottom: 5px" name = "department">
+                    <select class="selectpicker" id="btn_info" style="height: 37.5px; padding-bottom: 5px" name = "department" required>
                         <?php
                             $sql = mysqli_query($connect, "SELECT * FROM tbldepartment");
                             while ($row = $sql->fetch_assoc())
@@ -251,7 +216,7 @@
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">DATE OF EMPLOYMENT</label>
             <div class="col-sm-10">
-                  <select class="selectpicker btn_info" name = "month" id="month" style="height: 37px">
+                  <select class="selectpicker btn_info" name = "month" id="month" style="height: 37px" required>
                             <?php
                                 $explodedDate = explode("-", $loggedInUser->Date_Of_Employment);
                                 for($counter=1; $counter<=12; $counter++){
@@ -276,7 +241,7 @@
                             ?>
 				</select>
 
-                  <select class="selectpicker btn_info" name = "day" id="day" style="height: 37px">
+                  <select class="selectpicker btn_info" name = "day" id="day" style="height: 37px" required>
                       <?php
                           for($counter=1; $counter<=31; $counter++){
                               if($counter<10){
@@ -300,7 +265,7 @@
                       ?>
 				  </select>
 
-                  <select class="selectpicker btn_info" name = "year" id="year" style="height: 37px">
+                  <select class="selectpicker btn_info" name = "year" id="year" style="height: 37px" required>
                       <?php
                       for($counter=1950; $counter<=date("Y"); $counter++){
                           if($counter == $explodedDate[0]){

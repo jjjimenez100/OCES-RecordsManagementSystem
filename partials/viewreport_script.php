@@ -3,7 +3,7 @@
     $FILE_STORAGE_DIRECTORY = dirname(__FILE__).'/../storage';
     $reports = "";
     if(isset($approving)){
-        $reports = Report::where('Remarks', 0)->get();
+        $reports = Report::where('Remarks', 'pending')->get();
     }
     else if(isset($individualViewing)){
         $userLoggedIn = $_SESSION['username'];
