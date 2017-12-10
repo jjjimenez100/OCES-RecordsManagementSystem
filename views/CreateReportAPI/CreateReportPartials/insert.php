@@ -26,9 +26,9 @@
 	$timeend = $_POST['timeend'];
 	$activity = $_POST['activity'];
 	$person = $_POST['person'];
-	$schoolYear = "2017-2018";
-	$semester = "2nd Semester";
-	$remarks = "Pending";	
+	$schoolYear = "2017"; //dapat di fix to
+	$semester = "2"; //dapat di fix to
+	$remarks = "Pending";
 	$stmt = $connect->prepare("INSERT INTO tblreports (UserID, Activity_Title, Proponents, Beneficiaries, Accomplished_Objectives, Date, Venue, Time_Implemented, Brief_Narrative, Actual_Participation, School_Year, Semester, Remarks) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
 	$stmt->bind_param("issssssssssss",$_SESSION['userid'],$activityTitle,$proponents,$beneficiaries,$accomplishedObjectives,$date,$venue,$time,$briefNarrative,$servedCommunity,$schoolYear,$semester,$remarks);
 	if($stmt->execute())

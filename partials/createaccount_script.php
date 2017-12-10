@@ -21,6 +21,7 @@
       if(password != conpassword)
       {
         $('#modalNotMatch').modal('show');
+        $('.btn_proceed').unbind('click');
       }
 
       else
@@ -86,7 +87,7 @@
                 $('#errorSignUp').text('Request time out.');
               else
                 $('#errorSignUp').text('Unknown error.');              
-
+                //pano pag 403
               $('#modalError').modal('show');
             }
           });

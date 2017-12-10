@@ -1,9 +1,9 @@
 <?php
     //require dirname(__FILE__).'/../../config/autoloader.php';
-    $FILE_STORAGE_DIRECTORY = dirname(__FILE__).'/../storage';
+    $FILE_STORAGE_DIRECTORY = dirname(__FILE__).'/../storage/';
     $reports = "";
     if(isset($approving)){
-        $reports = Report::where('Remarks', 'pending')->get();
+        $reports = Report::where('Remarks', 'Pending')->get();
     }
     else if(isset($individualViewing)){
         $userLoggedIn = $_SESSION['username'];
@@ -42,7 +42,7 @@
                 foreach($reports as $report):
             ?>
                     <?php
-                        if($report->Remarks == 0 && !isset($approving)):
+                        if($report->Remarks == "Pending" && !isset($approving)):
                             continue;
                         endif;
                     ?>
@@ -70,9 +70,8 @@
                                 </td>
                             <?php else: ?>
                                 <td data-title="Files" data-id="<?php echo $report->Activity_Code; ?>">
-                                    <!-- papaltan pa to -->
-                                    <a class="btn btn-dark" href="<?php echo $FILE_STORAGE_DIRECTORY.$report->File_Activity?>" download><i class="fa fa-file-excel-o" aria-hidden="true"></i> .xlsx</a>
-                                    <a class="btn btn-dark" href="<?php echo $FILE_STORAGE_DIRECTORY.$report->File_Activity?>" download><i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</a>
+                                    <a class="btn btn-dark" href="<?php echo $FILE_STORAGE_DIRECTORY.$report->Activity_Title.'.xlsx'?>" download><i class="fa fa-file-excel-o" aria-hidden="true"></i> .xlsx</a>
+                                    <a class="btn btn-dark" href="<?php echo $FILE_STORAGE_DIRECTORY.$report->Activity_Title.'.pdf'?>" download><i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</a>
                                     <!--<button class="btn btn-dark"><i class="fa fa-file-excel-o" aria-hidden="true"></i> .xlsx</button>
                                     <button class="btn btn-dark"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</button>-->
                                 </td>

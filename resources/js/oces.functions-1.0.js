@@ -128,6 +128,7 @@ function onApprove(event){
     approve = true;
     selectedId = this.getAttribute("data-id");
     let activityTitle = this.getAttribute("data-activity");
+    console.log(this.getAttribute("data-activity"));
     confirmationMessage.innerHTML = `<p>Are you sure you want to approve report: <b>${activityTitle}</b>?</p>`;
 }
 
@@ -135,6 +136,7 @@ function onReject(event){
     approve = false;
     selectedId = this.getAttribute("data-id");
     let activityTitle = this.getAttribute("data-activity");
+    console.log(this.getAttribute("data-activity"));
     confirmationMessage.innerHTML = `<p>Are you sure you want to reject report: <b>${activityTitle}</b>?</p>`;
 }
 

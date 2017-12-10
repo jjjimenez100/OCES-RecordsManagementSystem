@@ -1,0 +1,60 @@
+//bale as of the moment eto ata yung mga natatandaan kong kulang pa
+
+//functional and na compile(?) na lahat ng modules
+
+SYS AD ACCOUNT - user: crisostomoibarra ;  p455: aether
+
+Create Report - 
+naka fix yung semester ni lloyd ng 2 ; dapat ata may drop down dito dun sa create report.
+naka fix din yung year ng 2017 ; dapat may drop down din siguro dito
+pedeng dumoble yung employee na ina-add
+pag nag search ka ng employee na hindi existing, walang prompt or what.
+
+Viewing - okay naman lahat sa pagkaka test ko, pero if may bugs pasabi na lang.
+Approving - okay na din
+note: hindi gagana yung download pdf pati .xlsx kasi may security stuff yung chrome, most likely pag nasa server na gagana
+to
+
+note: di gagana yung ibang accounts sa db na naka export pwera dun sa naka hash, gawa nalang kayong account dun hehe sry
+
+note: nagdagdag din akong isang view, yung view user related asgjoasjgoaskgao. pagkakaintindi ko kasi dun sa doc, yung mga
+role level na faculty ntp pababa nakikita nila yung mga reports nila. so ayun.
+
+Update profile - linagay ko sa lahat ng users na walang access sa update user account ; kase pano nila papaltan pass nila?
+- pede din naman tanggalin nalang na sys ad nalang mag papalit ng pass, sa navigation bar lang naman magpapalit.
+
+navigation bar - afaik okay naman ata to, pero if may nalagay akong access sa certain role na di dapat, paki sabi nalang din sakin.
+
+role checker - oqz na din
+
+login logout - oqz na din
+
+Update profile - update user accs (naka alert palang ata to, pero lalagyan nalang daw ni rhouleen ng modals).
+
+last na naisip ko yung sa dates: kasi naka fixed atang 31 yung mga drop down natin, pero what if walang 31 yung month na napili ganon?
+
+create user acc - di ata unique yung username sa db, so pede bang multiple username para dun sa faculty stuff or..
+
+note: on delete cascade yung linagay ko sa tblreports, tblprograms, tblfinance, tblvolunteers etc. since wala na din naman
+silbi yung coupled na ibang tblprograms, tbl finance etc. kapag na delete na yung mismong report.
+
+note: if may papaltan kayong file, send niyo nalang yung mga files mismooo or paalam niyo nalang dun sa gumawa nung module
+hehe baka kasi masira ko pag kinalikot ko :((, if may github na rn kayo mas maganda hehe, sabihin niyo nalang username
+niyo saki para ma add ko kayo as collab, para di na kayo ma-hassle sa pagssend ng files pati paguupdate
+
+note999: last na note na to HAHAHAHA yung mga images, file names etc. habang cinocompile ko ginawa kong case sensitive.
+pero if may madaanan kayong hindi naka case sensitive (e.x: haha.php yung file name pero sa pag ka require haHa.php) paki
+paltan nalang, baka di ko napansin wala akong salamin HAHA
+
+--security
+;; safe na din naman ata tayo sa sql injection, halos prepared statements naman nakita ko sa mga query natin
+;; sa file traversal naman medj hindi siguro, lalo na pag self submitting yung form.
+> paki escape nalang sa htmlspecialchars yung url ng form niyo if self submitting siya.
+note: self submitting yung nag ssubmit mismo sa page, pag naka ajax ayos lang
+;; naka hash ng md5 algo yung mga passwords, okay na siguro to. (sha256 ata nilagay ko dati, pero mas madami palang collisions yun so md5 nalang hehehe)
+;; medj kulang siguro sa server side validation (e.x: ininspect element ko yung dropdown, pinaltan ko value,
+sinubmit, or inopen ko console ng javascript, ininspect ko id nung disabled button, inenable ko, nag submit ako)
+pero oldies naman ata gagamit tsaka wala namang perang mawawala sakanila so ayos lang siguro haHAHAHAHAHAHAHAHA
+;; sa session variables pati cookies pede ding itamper pero ayun nga oldies din naman ata gagamit di naman nila gagawin HAHAHAHAHA
+
+//tapos na y3y

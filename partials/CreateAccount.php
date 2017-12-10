@@ -28,7 +28,7 @@
   $mname = ucwords(strtolower($mname));
   $lname = ucwords(strtolower($lname));
  
-  $password = hash("sha256", $password);
+  $password = hash("md5", $password);
   $sql= "insert into `tbluser` values ('$empID','$fname','$mname','$lname','$year-$month-$day', '$poslevel', '$dept', '$username', '$password')";
 
   $result = mysqli_query($connect, $sql);    

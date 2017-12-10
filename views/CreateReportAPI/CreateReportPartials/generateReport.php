@@ -26,8 +26,6 @@
 		$briefNarrative = $briefNarra;
 		$pdfName = $activityTitle . '.pdf';
 		$excelName = $activityTitle . '.xlsx';
-		$course = $course;
-		$department = $depart;
 		$university = 'Holy Angel University';
 		$report = 'COMMUNITY EXTENSION SERVICE ACTIVITY REPORT';
 		$city = 'Angeles City';
@@ -38,7 +36,7 @@
 		$pdf->AddPage();
 		$pdf->SetAutoPageBreak(true);
 		$pdf->Title($course);
-		$pdf->Title($department);
+		$pdf->Title($depart);
 		$pdf->Title($university);
 		$pdf->Title($city);
 		$pdf->Ln(7);

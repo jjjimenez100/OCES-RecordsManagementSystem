@@ -1,4 +1,6 @@
 <?php
+    $DOCUMENT_ROOT = $_SERVER["DOCUMENT_ROOT"];
+    $FILE_STORAGE_DIRECTORY = dirname(__FILE__).'/../storage/';
     require '../middleware/RoleMiddleware.php';
     if($roleChecker->hasApproveReportAccess() == false){
         $roleChecker->redirectUser();
@@ -9,10 +11,12 @@
         $report = Report::find($_POST["reportID"]);
         if($report){
             if($_POST["isApproved"] == "true"){
-                $report->Remarks = 1;
+                $report->Remarks = "Approved";
                 $report->save();
             }
             else{
+                unlink($DOCUMENT_ROOT.'/OCES/storage/'.$report->Activity_Title.'.pdf');
+                unlink($DOCUMENT_ROOT.'/OCES/storage/'.$report->Activity_Title.'.xlsx');
                 $report->delete();
             }
         }

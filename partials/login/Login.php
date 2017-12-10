@@ -10,6 +10,7 @@
       //12/2/17 10:25 updated mysql -> to mysqli ;
     $username = mysqli_real_escape_string($connect, $_POST['username']);
     $password = mysqli_real_escape_string($connect, $_POST['password']);
+    $password = hash("md5", $password);
 
     $stmt = $connect->prepare("SELECT * FROM `tbluser` WHERE `Username` = ? AND `Password` = ?");
     $stmt->bind_param("ss",$username,$password);
@@ -18,8 +19,7 @@
     $userdata = $result->fetch_array(MYSQLI_ASSOC);
     $_SESSION['username'] = $username;
 
-      if($userdata['Username'] == $username && $userdata['Password'] == $password)
-    //if($userdata['Username'] == $username && $userdata['Password'] == hash("sha256", $password))
+    if($userdata['Username'] == $username && $userdata['Password'] == $password)
     {     
       require 'RememberMe.php';
         $_SESSION['navbar'] = $userdata['Position_Level'];

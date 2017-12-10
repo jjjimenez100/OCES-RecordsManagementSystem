@@ -38,7 +38,7 @@ if(isset($_POST['updateProfile'])) {
         }
         else
         {
-            $password = $_POST['password'];
+            $password = hash("md5", $_POST['password']);
             $updateQuery = $connect->query("UPDATE tbluser SET `Password` = '$password' WHERE `Username` = '$username'");
         }
     }
