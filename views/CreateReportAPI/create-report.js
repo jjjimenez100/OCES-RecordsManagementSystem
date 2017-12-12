@@ -252,6 +252,8 @@ $(document).ready(function(){
 																	'total' : $('td[name=total]').text(),
 																	'department' : $('select[name=department]').val(),
 																	'course' : $('select[name=courses]').val(),
+																	'schoolYear' : $('select[name=schoolYear]').val(),
+																	'semester' : $('select[name=semester]').val()
 																};
 																	$.ajax({
 																		url: 'CreateReportAPI/CreateReportPartials/insert.php',

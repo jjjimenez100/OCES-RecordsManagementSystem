@@ -1,103 +1,11 @@
 <?php
-require '../middleware/RoleMiddleware.php';
-require '../config/autoloader.php' ;
-if($roleChecker->hasUpdateUserAccountAccess() == false){
-    $roleChecker->redirectUser();
-}
-
-require '../config/DatabaseConnection.php';
-$flag = false;
-if(isset($_POST['updateProfile'])) {
-    $username = $_SESSION['selectedUsername'];
-    if(isset($_POST['first_name']))
-    {
-        $fname = $_POST['first_name'];
-        $updateQuery = $connect->query("UPDATE tbluser SET `First_Name` = '$fname' WHERE `Username` = '$username'");
+    require '../middleware/RoleMiddleware.php';
+    require '../config/autoloader.php' ;
+    if($roleChecker->hasUpdateUserAccountAccess() == false){
+        $roleChecker->redirectUser();
     }
 
-    if(isset($_POST['middle_name']))
-    {
-        $mname = $_POST['middle_name'];
-        $updateQuery = $connect->query("UPDATE tbluser SET `Middle_Name` = '$mname' WHERE `Username` = '$username'");
-    }
-
-    if(isset($_POST['last_name']))
-    {
-        $lname = $_POST['last_name'];
-        $updateQuery = $connect->query("UPDATE tbluser SET `Last_Name` = '$lname' WHERE `Username` = '$username'");
-    }
-
-    if(isset($_POST['password']))
-    {
-        if ($_POST['password']!= $_POST['retypePassword'])
-        {
-            echo '<script language="javascript">';
-            echo 'alert("Password does not match.")';
-            echo '</script>';
-            $flag = true;
-        }
-        else
-        {
-            $password = hash("md5", $_POST['password']);
-            $updateQuery = $connect->query("UPDATE tbluser SET `Password` = '$password' WHERE `Username` = '$username'");
-        }
-    }
-
-    if(isset($_POST['department']))
-    {
-        $dept = $_POST['department'];
-        $updateQuery = $connect->query("UPDATE tbluser SET `Department` = '$dept' WHERE `Username` = '$username'");
-    }
-
-    if(isset($_POST['accountType']))
-    {
-        $accType = $_POST['accountType'];
-        $updateQuery = $connect->query("UPDATE tbluser SET `Position_Level` = '$accType' WHERE `Username` = '$username'");
-        if($_SESSION['username'] == $username){
-            $_SESSION['navbar'] = $accType ;
-        }
-    }
-
-    if(isset($_POST['email']))
-    {
-        $mail = $_POST['email'];
-        $updateQuery = $connect->query("UPDATE tbluser SET `Username` = '$mail' WHERE `username` = '$username'");
-        if($_SESSION['username'] == $username){
-            $_SESSION['username'] = $mail;
-            $username = $_SESSION['username'];
-        }
-    }
-    if(isset($_POST['month']) && isset($_POST['year']) && isset($_POST['day']))
-    {
-        $year = $_POST['year'];
-        $month = $_POST['month'];
-        $day = $_POST['day'];
-        $date = $year."-".$month."-".$day;
-        if($year <= date("Y")){
-            $updateQuery = $connect->query("UPDATE tbluser SET `Date_Of_Employment` = '$date' WHERE `Username` = '$username'");
-        }
-        else{
-            echo '<script language="javascript">';
-            echo 'alert("Choose a valid date.")';
-            echo '</script>';
-            $flag = true;
-        }
-    }
-    else{
-        echo '<script language="javascript">';
-        echo 'alert("Choose a valid date.")';
-        echo '</script>';
-        $flag = true;
-    }
-
-    if(!$flag){
-        echo '<script type="text/javascript">';
-        echo 'alert("Updated user account.");';
-        echo 'window.location.href = "UpdateUserAccount.php";';
-        echo '</script>';
-        exit();
-    }
-}
+    require '../config/DatabaseConnection.php';
 ?>
 
 <!DOCTYPE html>
@@ -108,6 +16,10 @@ if(isset($_POST['updateProfile'])) {
     require '../partials/cssmetafiles.php' ;
     ?>
     <link type="text/css" rel="stylesheet" href="../resources/css/styles2.css">
+    <?php
+      require '../partials/javascriptfiles.php';
+      require '../partials/updateaccount_script.php';
+    ?>
 </head>
 
 <body>
@@ -117,26 +29,26 @@ require '../partials/navigationbar.php' ;
 <!-- FORM -->
 <div class="container" style="padding-top: 50px; padding-bottom: 50px">
     <br>
-    <h2 class="text-center"><i class="fa fa-users" aria-hidden="true"></i> Update User Accounts</h2><br>
+    <h2 class="text-center"><i class="fa fa-users" aria-hidden="true"></i> Update User Accounts</h2>
     <hr noshade="noshade" style="border: 1px solid #CFB53B"><br>
     <form method = "POST" action="">
         <div class="form-group row">
             <label class="col-sm-2 col-form-label">EMPLOYEE ID</label>
             <div class="col-sm-10 form-group row">
-                <div class="col-sm-6"><input type="text" class="form-control" name = "id" placeholder="employee id"
-                                             value = "<?php if(isset($_POST['id'])) { echo $_POST['id'];} ?>"></div>   <!-- RETAIN VALUE -->
-
-                <div class="col-sm-5"><button type="submit" class="btn" name = "search" id="btn_create" button onclick = "">SEARCH</button></div>
+                <div class="col-sm-6"><input type="text" class="form-control" name="id" id="empID" placeholder="employee id"
+                                             value = "<?php if(isset($_POST['id'])) { echo $_POST['id'];} ?>" 
+                                             <?php if(isset($_POST['search'])) { echo 'readonly';}?> required></div> 
+                <div class="col-sm-5">
+                    <button type="submit" class="btn" name="search" id="btn_create">SEARCH</button>
+                    <button class="btn" name="clear" id="btn_create" onclick="clearText()" >CLEAR</button>
+                </div>
                 <?php
                 if(isset($_POST['search']))
                 {
                     $id = $connect->real_escape_string($_POST['id']);
                     $findQuery = $connect->query("SELECT * FROM tbluser WHERE `UserID` = '$id'");
                     if($findQuery->num_rows >0)
-                    {
-                        echo '<script language="javascript">';
-                        echo 'alert("User Exist")';
-                        echo '</script>';
+                    {  
                         while($reportdata = $findQuery->fetch_array(MYSQLI_ASSOC))
                         {
                             $firstname = $reportdata['First_Name'];
@@ -152,40 +64,53 @@ require '../partials/navigationbar.php' ;
                     }
                     else
                     {
-                        echo '<script language="javascript">';
-                        echo 'alert("User does not exist")';
-                        echo '</script>';
+                        echo "<script src='../resources/js/jquery-3.2.1.min.js'></script>
+                              <script type='text/javascript'>
+                                $(document).ready(function()
+                                {
+                                  $('#modalErrorSearch').modal('show');
+                                });
+                              </script>";                     
                     }
                 }
                 ?>
+                <script type="text/javascript">
+                    function clearText()  
+                    {
+                        window.location.href = window.location.href;
+                        document.getElementById('empID').value = "";
+                    } 
+                </script>
             </div>
         </div>
-
+     </form>
+     
+     <form method = "POST" action="" class="updateForm">
         <hr noshade="noshade" style="border: 1px solid #CFB53B"><br>
         <div class="form-group row">
             <label class="col-sm-2 col-form-label">FIRST NAME</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" name = "first_name" placeholder="first name" value ="<?php if(isset($firstname)){echo $firstname;}?>">
+                <input type="text" class="form-control" name = "first_name" id="fname" placeholder="first name" value ="<?php if(isset($firstname)){echo $firstname;}?>" style="text-transform: capitalize;" required>
             </div>
         </div>
 
         <div class="form-group row">
             <label class="col-sm-2 col-form-label">MIDDLE NAME</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" name = "middle_name" placeholder="middle name" value="<?php if(isset($middlename)){echo $middlename;}?>">
+                <input type="text" class="form-control" name = "middle_name" id="mname" placeholder="middle name" value="<?php if(isset($middlename)){echo $middlename;}?>" style="text-transform: capitalize;" required>
             </div>
         </div>
 
         <div class="form-group row">
             <label class="col-sm-2 col-form-label">LAST NAME</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" name = "last_name" placeholder="last name" value="<?php if(isset($lastname)){echo $lastname;}?>">
+                <input type="text" class="form-control" name = "last_name" id="lname" placeholder="last name" value="<?php if(isset($lastname)){echo $lastname;}?>" style="text-transform: capitalize;" required>
             </div>
         </div>
         <div class="form-group row">
             <label class="col-sm-2 col-form-label">HAU EMAIL</label>
             <div class="col-sm-10 form-group row">
-                <div class="col-sm-6"><input type="text" class="form-control" name = "email" placeholder="hau username" value="<?php if(isset($str)){echo $str;}?>">
+                <div class="col-sm-6"><input type="text" class="form-control" id="username" name = "email" placeholder="hau username" value="<?php if(isset($str)){echo $str;}?>" required>
                 </div>
                 <div class="col-sm-6"><input type="text" class="form-control" name = "address" placeholder="@hau.edu.ph" value ="@hau.edu.ph" readonly></div>
             </div>
@@ -194,14 +119,14 @@ require '../partials/navigationbar.php' ;
         <div class="form-group row">
             <label class="col-sm-2 col-form-label">PASSWORD</label>
             <div class="col-sm-10">
-                <input type="password" class="form-control" name = "password" placeholder="password" value ="<?php if(isset($password)){echo $password;}?>">
+                <input type="password" class="form-control" name = "password" id="password" placeholder="password" value ="<?php if(isset($password)){echo $password;}?>" required>
             </div>
         </div>
 
         <div class="form-group row">
             <label class="col-sm-2 col-form-label">RE-TYPE PASSWORD</label>
             <div class="col-sm-10">
-                <input type="password" class="form-control" name = "retypePassword" placeholder="re-type password" value ="<?php if(isset($password)){echo $password;}?>">
+                <input type="password" class="form-control" name = "retypePassword" id="retypePassword" placeholder="re-type password" value ="<?php if(isset($password)){echo $password;}?>" required>
             </div>
         </div>
 
@@ -209,7 +134,7 @@ require '../partials/navigationbar.php' ;
             <label class="col-sm-2 col-form-label">ACCOUNT TYPE</label>
             <div class="col-sm-10">
                 <div>
-                    <select class="selectpicker"  id="btn_info" name = "accountType" style="height: 37px">
+                    <select class="btn_info selectpicker" id="poslevel" name = "accountType" style="height: 37px" required>
 
                         <option value ="System Administrator" <?php if(isset($selectedUser)){if($selectedUser->Position_Level == "System Administrator") echo "selected"; }?>> System Administrator</option>
                         <option value ="OCES Administrator" <?php if(isset($selectedUser)){ if($selectedUser->Position_Level == "OCES Administrator") echo "selected"; }?>>OCES Administrator</option>
@@ -235,7 +160,7 @@ require '../partials/navigationbar.php' ;
             <label class="col-sm-2 col-form-label">DEPARTMENT</label>
             <div class="col-sm-10">
                 <div>
-                    <select class="selectpicker" id="btn_info" style="height: 37.5px; padding-bottom: 5px" name = "department">
+                    <select class="btn_info selectpicker" id="dept" style="height: 37.5px; padding-bottom: 5px" name = "department" required>
                         <?php
                         $sql = mysqli_query($connect, "SELECT * FROM tbldepartment");
                         while ($row = $sql->fetch_assoc())
@@ -256,7 +181,7 @@ require '../partials/navigationbar.php' ;
         <div class="form-group row">
             <label class="col-sm-2 col-form-label">DATE OF EMPLOYMENT</label>
             <div class="col-sm-10">
-                <select class="selectpicker btn_info" name = "month" id="month" style="height: 37px">
+                <select class="selectpicker btn_info" name = "month" id="month" style="height: 37px" onchange="configureDateDropDown(this, document.getElementById('day'))" required>
                     <?php
                     $explodedDate = explode("-", $selectedUser->Date_Of_Employment);
                     for($counter=1; $counter<=12; $counter++){
@@ -281,7 +206,7 @@ require '../partials/navigationbar.php' ;
                     ?>
                 </select>
 
-                <select class="selectpicker btn_info" name = "day" id="day" style="height: 37px">
+                <select class="selectpicker btn_info" name = "day" id="day" style="height: 37px" required>
                     <?php
                     for($counter=1; $counter<=31; $counter++){
                         if($counter<10){
@@ -305,7 +230,7 @@ require '../partials/navigationbar.php' ;
                     ?>
                 </select>
 
-                <select class="selectpicker btn_info" name = "year" id="year" style="height: 37px">
+                <select class="selectpicker btn_info" name = "year" id="year" style="height: 37px" required>
                     <?php
                     for($counter=1950; $counter<=date("Y"); $counter++){
                         if(isset($selectedUser) && $counter == $explodedDate[0]){
@@ -320,9 +245,8 @@ require '../partials/navigationbar.php' ;
             </div>
         </div>
         <hr style="border: 1px solid #CFB53B"><br>
-        <button type="submit" class="btn" id="btn_create" name="updateProfile" <?php if(!isset($selectedUser)) echo 'disabled';?>>UPDATE PROFILE</button>
+        <button type="submit" class="btn btn_update" id="btn_create" name="updateProfile" <?php if(!isset($selectedUser)) echo 'disabled';?>>UPDATE PROFILE</button>
     </form>
-
 </div>
 
 </body>
@@ -330,5 +254,7 @@ require '../partials/navigationbar.php' ;
 <!-- JAVASCRIPT -->
 <?php
 require '../partials/javascriptfiles.php' ;
+require '../partials/disablekeys_script.php' ;
+require '../partials/modals/updateacctmodal_script.php' ;
 ?>
 </html>

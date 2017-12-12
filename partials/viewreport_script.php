@@ -23,10 +23,9 @@
                 <th class="text-center">Date</th>
                 <th class="text-center">Venue</th>
                 <th class="text-center">Beneficiaries</th>
+                <th class="text-center"><i class="fa fa-download" aria-hidden="true"></i> Files</th>
                 <?php if(isset($approving)): ?>
                     <th class="text-center">Actions</th>
-                <?php else: ?>
-                    <th class="text-center"><i class="fa fa-download" aria-hidden="true"></i> Files</th>
                 <?php endif; ?>
                 <th class="d-none"></th>
                 <th class="d-none"></th>
@@ -63,17 +62,14 @@
                                 </button>
                             </td>
                             <td data-title="Beneficiaries"><button type="button" class="btn btn-dark" data-toggle="popover" title="<?php echo $report->Activity_Title; ?>'s Beneficiaries" data-content="<?php echo $report->Beneficiaries; ?>">View Beneficiaries <i class="fa fa-arrow-right" aria-hidden="true"></i></button></td>
+                            <td data-title="Files" data-id="<?php echo $report->Activity_Code; ?>">
+                                <a class="btn btn-dark" href="<?php echo $FILE_STORAGE_DIRECTORY.$report->Activity_Title.'.xlsx'?>" download><i class="fa fa-file-excel-o" aria-hidden="true"></i> .xlsx</a>
+                                <a class="btn btn-dark" href="<?php echo $FILE_STORAGE_DIRECTORY.$report->Activity_Title.'.pdf'?>" download><i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</a>
+                            </td>
                             <?php if(isset($approving)): ?>
                                 <td class="text-center" style="vertical-align: middle;">
                                     <button class="btn btn-success approve" data-activity="<?php echo $report->Activity_Title;?>" data-toggle="modal" data-target="#modalAdd" data-id="<?php echo $report->Activity_Code; ?>"><i class="fa fa-check" aria-hidden="true"></i> Approve</button>
                                     <button class="btn btn-danger reject" data-activity="<?php echo $report->Activity_Title;?>" data-toggle="modal" data-target="#modalAdd" data-id="<?php echo $report->Activity_Code; ?>"><i class="fa fa-times" aria-hidden="true"></i> Reject</button>
-                                </td>
-                            <?php else: ?>
-                                <td data-title="Files" data-id="<?php echo $report->Activity_Code; ?>">
-                                    <a class="btn btn-dark" href="<?php echo $FILE_STORAGE_DIRECTORY.$report->Activity_Title.'.xlsx'?>" download><i class="fa fa-file-excel-o" aria-hidden="true"></i> .xlsx</a>
-                                    <a class="btn btn-dark" href="<?php echo $FILE_STORAGE_DIRECTORY.$report->Activity_Title.'.pdf'?>" download><i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</a>
-                                    <!--<button class="btn btn-dark"><i class="fa fa-file-excel-o" aria-hidden="true"></i> .xlsx</button>
-                                    <button class="btn btn-dark"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</button>-->
                                 </td>
                             <?php endif; ?>
                             <td class="d-none"><?php echo $report->user->Department; ?></td>

@@ -22,7 +22,7 @@
         });
 
         //No spaces
-        $("#username,#password,#conpassword").keypress(function(event)
+        $("#username,#password,#conpassword,#retypePassword").keypress(function(event)
         {
             var inputValue = event.keyCode;
             if(inputValue == 32) 

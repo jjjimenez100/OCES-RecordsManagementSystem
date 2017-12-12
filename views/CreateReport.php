@@ -56,7 +56,7 @@
             <label class="col-sm-2 col-form-label">DATE</label>
             <div class="col-sm-10">
               <div>
-                  <select name="monthSelected" class="selectpicker btn_info" id="month" style="height: 37px"></select>
+                  <select name="monthSelected" class="selectpicker btn_info" id="month" style="height: 37px" onchange="configureDateDropDown(this, document.getElementById('day'))"></select>
                   <select name="daySelected" class="selectpicker btn_info" id="day" style="height: 37px"></select>
                   <select name="yearSelected" class="selectpicker btn_info" id="year" style="height: 37px"></select>                  
                 </div>
@@ -79,7 +79,32 @@
             <div class="col-sm-10">
               <textarea name="briefNarrative" class="form-control" rows="5" placeholder="brief narrative"></textarea>
             </div>
-          </div>   
+          </div>
+        <div class="form-group row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-2">
+                <select class="selectpicker btn_info" id="semester" name="semester" style="height: 37px; max-width: 355px">
+                    <option selected disabled>Select Semester</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </div>
+            <div class="col-sm-2">
+                <select class="selectpicker btn_info" id="schoolYear" name="schoolYear" style="height: 37px; max-width: 355px">
+                    <option selected disabled>Select School Year</option>
+                    <?php
+                    for($counter=1950; $counter<=date("Y"); $counter++){
+                        if(isset($selectedUser) && $counter == $explodedDate[0]){
+                            echo '<option value = "'.$counter.'"selected>'.$counter.'</option>';
+                        }
+                        else{
+                            echo '<option value = "'.$counter.'">'.$counter.'</option>';
+                        }
+                    }
+                    ?>
+                </select>
+            </div>
+        </div>
 			</form>
           <hr style="border: 1px solid #CFB53B"><br>
 		  <div id="searchVolun"></div>
@@ -105,7 +130,7 @@
             <label class="col-sm-2 col-form-label">Nature of Participation</label>
             <div class="col-sm-10 form-group row">
               <div class="col-sm-2">
-                <select class="selectpicker btn_info"  id="group" onchange="configureDropDownLists(this,document.getElementById('participation'))" style="height: 37px">
+                <select class="selectpicker btn_info"  id="group" style="height: 37px">
                   <option selected disabled>Select Group</option>
                   <option>A</option>
                   <option>B</option>
@@ -247,9 +272,13 @@
                 </select>                
               </div>
 	</div>
+
+  <br><hr style="border: 1px solid #CFB53B"><br>
+
+
 	  <div id="alert"></div>
       <center><button name="generateReport" type="submit" class="btn" id="btn_create">GENERATE REPORT</button></center>
-  </div>        
+
 
   </body>
   
@@ -257,5 +286,5 @@
   <?php
       require '../partials/date_script.php';
       require '../partials/participation_script.php';
-  ?> 
+  ?>
 </html>

@@ -44,7 +44,6 @@ require '../partials/navigationbar.php';
 
                 </select>
                 <select class="selectpicker btn_info" id="semester" style="height: 37px">
-
                 </select>
             </div>
             <div class="col-sm-4">
@@ -82,7 +81,7 @@ require '../partials/navigationbar.php';
 <script>
     $(document).ready(function(){
        initViewByDate(["from_year", "to_year", "semester", "from", "to", "exact"],
-           "#tblReports", 2010, new Date().getFullYear(), 2);
+           "#tblReports", 1950, new Date().getFullYear(), 2);
     });
 </script>
 </html>

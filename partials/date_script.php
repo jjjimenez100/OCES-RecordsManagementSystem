@@ -1,3 +1,56 @@
+<script type="text/javascript">    
+    function configureDateDropDown(month,day) 
+    {
+        switch (month.value) 
+        {
+            case '1': case '3': case '5': case '7': case '8': case '10': case '12':
+                day.options.length = 0;
+                createOption2(day);
+                for (i = 1; i <= 31; i++) 
+                {
+                    createDayOption(day, i, i);
+                }
+                break;
+
+            case '2':
+                day.options.length = 0;
+                createOption2(day);
+                for (i = 1; i <= 29; i++) 
+                {
+                    createDayOption(day, i, i);
+                }
+                break;
+
+            case '4': case '6': case '9': case '11': 
+                day.options.length = 0;
+                createOption2(day);
+                for (i = 1; i <= 30; i++) 
+                {
+                    createDayOption(day, i, i);
+                }
+                break;
+        }
+    }
+
+    function createDayOption(ddl, text, value) 
+    {
+        var opt = document.createElement('option');   
+        opt.value = value;
+        opt.text = text;
+        ddl.options.add(opt);
+    }
+
+    function createOption2(ddl) 
+    {
+        var opt = document.createElement('option');   
+        opt.value = "DD";
+        opt.text = "DD";
+        ddl.options.add(opt);
+
+        document.getElementById("day").options[0].disabled = true;
+    }
+</script>
+
 <script>
     var start = 1;
     var end = 12;
@@ -41,9 +94,6 @@
 </script>
 
 <!--
-
-<?php if (isset($_POST['year']) && $_POST['year']=="$year") echo "selected";?>
-
 <script>
     var start = 1950;
     var end = new Date().getFullYear();

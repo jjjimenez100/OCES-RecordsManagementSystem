@@ -130,7 +130,7 @@
             <label class="col-sm-2 col-form-label">DATE OF EMPLOYMENT</label>
             <div class="col-sm-10">
               <div>
-                  <select name="month" class="selectpicker btn_info" id="month" style="height: 37px" required></select>
+                  <select name="month" class="selectpicker btn_info" id="month" style="height: 37px" required onchange="configureDateDropDown(this, document.getElementById('day'))"></select>
                   <select name="day" class="selectpicker btn_info" id="day" style="height: 37px" required></select>
                   <select name="year" class="selectpicker btn_info" id="year" style="height: 37px" required></select>
               </div>

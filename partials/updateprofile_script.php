@@ -1,18 +1,16 @@
 <script>
   $(function() 
   {
-    $('form').on('submit', function(e) 
+    $('.updateForm').on('submit', function(e) 
     {
       e.preventDefault();
 
-      var empID = $('#empID').val();
       var fname = $('#fname').val();
       var mname = $('#mname').val();
       var lname = $('#lname').val();
       var username = $('#username').val();
       var password = $('#password').val();
-      var conpassword = $('#conpassword').val();
-      var poslevel = $('#poslevel').val();
+      var conpassword = $('#retypePassword').val();
       var dept = $('#dept').val();
       var month = $('#month').val();
       var day = $('#day').val();
@@ -26,35 +24,33 @@
 
       else
       {
-        $('#empid').text(empID);
-        $('#first').text(fname);
-        $('#middle').text(mname);
-        $('#last').text(lname);
-        $('#user').text(username);
-        $('#pass').text(password);
-        $('#acctype').text(poslevel);
-        $('#department').text(dept);
-        $('#mm').text(month);
-        $('#dd').text(day);
-        $('#yyyy').text(year);
-
-        $('#myModal').modal('show');
+        $('#firstp').text(fname);
+        $('#middlep').text(mname);
+        $('#lastp').text(lname);
+        $('#userp').text(username);
+        $('#passp').text(password);
+        $('#departmentp').text(dept);
+        $('#mmp').text(month);
+        $('#ddp').text(day);
+        $('#yyyyp').text(year);
+        
+        $('#myModalProfile').modal('show');
         
         $('.btn_proceed').click(function()
         {
           $.ajax(
           {
             type: 'POST',
-            url: '../partials/CreateAccount.php',
+            url: '../partials/UpdateProfileURL.php',
             data: $('form').serialize(),
             dataType: 'json',
             success: function(data) 
             {
-              $('#myModal').modal('hide');  
+              $('#myModalProfile').modal('hide');  
 
               if(data.status == 'success')
               {                                
-                $('#modalSuccess').modal('show');
+                $('#modalSuccessUpdate').modal('show');
 
                 setTimeout(function()
                 {
@@ -63,8 +59,8 @@
               }
               else if(data.status == 'error')
               {
-                $('#errorSignUp').text('Unsuccessful sign-up.');
-                $('#modalError').modal('show');
+                $('#errorUpdate').text('Unsuccessful update.');
+                $('#modalErrorUpdate').modal('show');
 
                 $('.btn_proceed').unbind('click');
               }
@@ -73,24 +69,24 @@
             },
             error: function(x, y)
             {
-              $('#myModal').modal('hide');
+              $('#myModalProfile').modal('hide');
 
               if (x.status == 0) 
-                $('#errorSignUp').text('There is a problem with your network.');
+                $('#errorUpdate').text('There is a problem with your network.');
               else if (x.status == 403) 
-              	$('#errorSignUp').text('Forbidden access.');
+              	$('#errorUpdate').text('Forbidden access.');
               else if(x.status == 404)
-                $('#errorSignUp').text('Requested URL not found.');
+                $('#errorUpdate').text('Requested URL not found.');
               else if(x.status == 500) 
-                $('#errorSignUp').text('Internel server error.');
+                $('#errorUpdate').text('Internel server error.');
               else if(y == 'parsererror')
-                $('#errorSignUp').text('Parsing JSON request failed.');
+                $('#errorUpdate').text('Parsing JSON request failed.');
               else if(y == 'timeout')
-                $('#errorSignUp').text('Request time out.');
+                $('#errorUpdate').text('Request time out.');
               else
-                $('#errorSignUp').text('Unknown error.');              
+                $('#errorUpdate').text('Unknown error.');              
                 
-              $('#modalError').modal('show');
+              $('#modalErrorUpdate').modal('show');
             }
           });
         });            
